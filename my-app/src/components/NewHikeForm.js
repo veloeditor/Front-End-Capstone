@@ -19,6 +19,11 @@ class NewHikeForm extends Component {
         this.setState(stateToChange);
     };
 
+    handleCancel = (event) => {
+        event.preventDefault()
+        this.props.history.push("/hikes");
+    }
+
     /*  Local method for validation, set loadingStatus, create trail object, invoke the TrailsManager post method, and redirect to the full trail list
     */
     constructNewHike = evt => {
@@ -32,7 +37,7 @@ class NewHikeForm extends Component {
                 name: this.state.name,
                 userId: parseInt(username.id),
                 date: this.state.date,
-                miles: parseInt(this.state.trail.miles),
+                miles: parseInt(this.state.miles),
                 trailId: parseInt(this.state.trailId),
                 comments: this.state.comments
             };
@@ -46,7 +51,6 @@ class NewHikeForm extends Component {
     componentDidMount() {
         TrailsManager.getAll()
         .then(trails => {
-            console.log(trails[0].miles)
             this.setState({
               name: trails.name,    
               trailId: trails.id,
@@ -120,6 +124,10 @@ class NewHikeForm extends Component {
                         disabled={this.state.loadingStatus}
                         onClick={this.constructNewHike}
                         >Submit</button>
+
+                        <button outline color="dark" size="sm" type="cancel" onClick={this.handleCancel}>
+                                                Cancel
+                            </button>
                     </div>
                 </fieldset>
             </form>

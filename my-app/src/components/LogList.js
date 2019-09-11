@@ -21,6 +21,7 @@ componentDidMount(){
     })
 }
 
+
 deleteHike = id => {
     const username = (JSON.parse(sessionStorage.getItem("credentials")))
     HikesManager.delete(id)
@@ -35,7 +36,7 @@ deleteHike = id => {
 }
 
 updateHike = hikeObj => {
-    HikesManager.saveEditedTask(hikeObj)
+    HikesManager.saveEditedHike(hikeObj)
         .then(() => {
             this.componentDidMount()
         })
@@ -51,6 +52,10 @@ render(){
             <button outline color="secondary" size="sm"
                 onClick={() => {this.props.history.push("/hikes/new")}}>
                 Add a new hike
+            </button>
+            <button outline color="secondary" size="sm"
+                onClick={() => {this.props.history.push("/")}}>
+                Back to Dashboard
             </button>
             </section>
             <div className="hike_container">

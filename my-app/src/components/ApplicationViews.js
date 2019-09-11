@@ -4,8 +4,10 @@ import Login from "../auth/Login"
 import Register from "../auth/Register"
 import LogList from './LogList'
 import NewHikeForm from './NewHikeForm'
+import EditLogForm from './EditLogForm'
+import GoalForm from './GoalForm'
+import Footer from './Footer'
 import Dashboard from "./Dashboard"
-
 
 class ApplicationViews extends Component {
   isAuthenticated = () => sessionStorage.getItem("credentials") !== null
@@ -42,9 +44,15 @@ class ApplicationViews extends Component {
          <Route path="/hikes/new" render={(props) => {
           return <NewHikeForm {...props} />
         }} />
-          {/* <Route path="/hikes/:hikeId(\d+)/edit" render={props => {
+          <Route path="/hikes/:hikeId(\d+)/edit" render={props => {
             return <EditLogForm {...props} />
-          }} /> */}
+          }} />
+          <Route path="/goal" render={props => {
+            return <GoalForm {...props} />
+          }} />
+           <Route path="/footer" render={props => {
+            return <Footer {...props} />
+          }} />
       
       </React.Fragment>
     );
