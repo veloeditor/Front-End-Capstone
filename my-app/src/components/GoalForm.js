@@ -17,7 +17,7 @@ class HikeEditForm extends Component {
 
     handleCancel = (event) => {
       event.preventDefault()
-      this.props.history.push("/dashboard");
+      this.props.history.push("/");
   }
 
     updateExistingGoal = evt => {

@@ -26,10 +26,11 @@ code {
   margin-top: 10px;
 }
 
-.userMiles {
+.userMiles, .userPerc {
   font-weight: bold;
   font-size: 1.2em;
   color: rgb(73, 42, 9);
+  text-decoration: underline;
 }
 
 .tag_name {
@@ -86,6 +87,7 @@ code {
   justify-content: center;
   margin-top: 70px;
   height: 30px;
+  text-decoration: none;
 
 }
 

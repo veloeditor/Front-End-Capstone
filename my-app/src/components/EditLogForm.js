@@ -1,5 +1,7 @@
 import React, { Component } from "react"
 import HikesManager from "../modules/HikesManager"
+import TrailsManager from '../modules/TrailsManager';
+
 // import "./OwnerForm.css"
 
 class HikeEditForm extends Component {
@@ -9,6 +11,8 @@ class HikeEditForm extends Component {
         date: "",
         miles: 0,
         comments: "",
+        trails: [],
+        trailId: 0,
         loadingStatus: true,
     };
 

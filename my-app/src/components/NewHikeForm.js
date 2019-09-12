@@ -19,6 +19,15 @@ class NewHikeForm extends Component {
         this.setState(stateToChange);
     };
 
+    handleTrailChange = evt => {
+        const stateToChange = {};
+        const trailMiles = this.state.trails.filter((trail) => trail.id == evt.target.value)[0].miles
+        console.log(trailMiles)
+        stateToChange[evt.target.id] = evt.target.value;
+        stateToChange["miles"] = trailMiles
+        this.setState(stateToChange);
+    };
+
     handleCancel = (event) => {
         event.preventDefault()
         this.props.history.push("/hikes");
@@ -29,15 +38,15 @@ class NewHikeForm extends Component {
     constructNewHike = evt => {
         const username = (JSON.parse(sessionStorage.getItem("credentials")))
         evt.preventDefault();
-        if (this.state.name === "" || this.state.length === "") {
-            window.alert("Please select a trail");
-        } else {
+        // if (this.state.name === "" || this.state.length === "") {
+        //     window.alert("Please select a trail");
+        // } else {
             this.setState({ loadingStatus: true });
             const trail = {
                 name: this.state.name,
                 userId: parseInt(username.id),
                 date: this.state.date,
-                miles: parseInt(this.state.miles),
+                miles: parseFloat(this.state.miles),
                 trailId: parseInt(this.state.trailId),
                 comments: this.state.comments
             };
@@ -45,16 +54,16 @@ class NewHikeForm extends Component {
             // Create the trail and redirect user to trail list
             HikesManager.post(trail)
             .then(() => this.props.history.push("/hikes"));
-        }
+        // }
     };
 
     componentDidMount() {
+        HikesManager.getAll()
         TrailsManager.getAll()
         .then(trails => {
             this.setState({
               name: trails.name,    
               trailId: trails.id,
-              miles: trails.miles,
               loadingStatus: false,
               trails: trails,
             });
@@ -74,24 +83,15 @@ class NewHikeForm extends Component {
                             className="form-control"
                             id="trailId"
                             value={this.state.name}
-                            onChange={this.handleFieldChange}
+                            onChange={this.handleTrailChange}
                             >
+                            <option>Select Trail</option>
                             {this.state.trails.map(trail =>
                                 <option key={trail.id} value={trail.id}>
                                 {trail.name}
                                 </option>
                             )}
                         </select>
-                        <label htmlFor="miles"> Miles: </label>
-                        <input
-                        type="number"
-                        required
-                        className="form-control"
-                        onChange={this.handleFieldChange}
-                        id="miles"
-                        
-                        placeholder="Miles"
-                        />
                         <br></br>
                         <label htmlFor="date"> Date of Hike: </label>
                         <input

@@ -12,6 +12,7 @@ class Dashboard extends Component {
     totalMiles: 0,
     users: [],
     goalPercentage: 0,
+    goal: 0,
 }
 
   logout = () => {
@@ -32,10 +33,10 @@ class Dashboard extends Component {
 
     userGoalProgress = () => {
       const username = (JSON.parse(sessionStorage.getItem("credentials")))
-      UserManager.getAll(username.id)
+      UserManager.get(username.id)
         .then((users) => {
-          const percentage = users.filter(user => user.userId === username.id).this.state.totalMiles / users.goal
-          console.log(percentage)
+          const percentage = this.state.totalMiles / users.goal * 100
+          console.log(this.state.totalMiles)
           this.setState({goalPercentage: percentage})
           return percentage
         })
@@ -46,7 +47,7 @@ class Dashboard extends Component {
       HikesManager.getAll(username.id)
       .then((hikes) => this.setState({hikes})
       ).then(() => this.totalUserMiles())
-      .then(() => this.userGoalProgress)
+      .then(() => this.userGoalProgress())
   }
 
   
@@ -62,7 +63,7 @@ class Dashboard extends Component {
         <h3 className="welcome_h3">Welcome, <span>{username.username}</span>!</h3>
         <div> <button outline color="secondary" size="sm" className="sign_out" onClick={this.logout}>Logout</button></div> 
         <p>You've hiked <span className="userMiles">{this.state.totalMiles}</span> miles so far. <br></br>
-        You're <span>{this.state.goalPercentage}%</span> of your way towards your goal.</p>
+        You're <span className="userPerc">{this.state.goalPercentage}%</span> of your way towards your goal.</p>
         <button className="goal_change" onClick={() => {this.props.history.push("/goal")}}>Change your goal</button>
       </div>
       <br></br>
