@@ -9,6 +9,8 @@ class Login extends Component {
         username: "",
         password: "",
         id: 0,
+        goal: 0,
+        completedMiles: 0,
     }
 
     // Update state whenever an input field is edited

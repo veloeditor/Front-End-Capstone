@@ -65,53 +65,48 @@ class NewHikeForm extends Component {
 
         return(
             <>
+            <div className="add_hike_container">
             <form>
-                <fieldset>
-                <h2>Add a Hike:</h2>
+                <h3 className="add_hike_h3">Add a Hike:</h3>
                     <div className="formgrid">
-                        {/* <label htmlFor="name">Name</label>
-                        <input
-                        type="text"
-                        required
-                        className="form-control"
-                        onChange={this.handleFieldChange}
-                        onKeyUp={this.searchForHike}
-                        id="name"
-                        placeholder="Search for a trail"
-                        /> */}
+                    <label htmlFor="name">Trail Name: </label>
                          <select
                             className="form-control"
-                            id="name"
+                            id="trailId"
                             value={this.state.name}
                             onChange={this.handleFieldChange}
                             >
                             {this.state.trails.map(trail =>
-                                <option key={trail.id} value={trail.name}>
+                                <option key={trail.id} value={trail.id}>
                                 {trail.name}
                                 </option>
                             )}
                         </select>
-                        <label htmlFor="miles">Miles</label>
+                        <label htmlFor="miles"> Miles: </label>
                         <input
                         type="number"
                         required
+                        className="form-control"
                         onChange={this.handleFieldChange}
                         id="miles"
-                    
+                        
                         placeholder="Miles"
                         />
-                        <label htmlFor="date">Date of Hike</label>
+                        <br></br>
+                        <label htmlFor="date"> Date of Hike: </label>
                         <input
                         type="date"
                         required
+                        className="form-control"
                         onChange={this.handleFieldChange}
                         id="date"
                         placeholder="date"
                         />
-                        <label htmlFor="comments">Comments</label>
+                        <label htmlFor="comments"> Comments: </label>
                         <input
                         type="text"
                         required
+                        className="form-control"
                         onChange={this.handleFieldChange}
                         id="comments"
                         placeholder="Trail Comments"
@@ -126,11 +121,12 @@ class NewHikeForm extends Component {
                         >Submit</button>
 
                         <button outline color="dark" size="sm" type="cancel" onClick={this.handleCancel}>
-                                                Cancel
+                                                Back
                             </button>
                     </div>
-                </fieldset>
-            </form>
+                   
+                </form>
+            </div>
         </>
         )
     }

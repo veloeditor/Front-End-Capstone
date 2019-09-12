@@ -9,8 +9,8 @@ class Header extends Component {
     return (
       <header>
             <div>
-                <h1>The Smoky Mountain Hiking Log<br /></h1>
-                <h3>800 miles of trails, endless adventure.</h3>
+                <span><img src={ require('./img/logo.png') } alt="Nutshell logo"/></span>
+                <h3 className="tag_name">800 miles of trails, endless adventure.</h3>
             </div>
         </header>
      

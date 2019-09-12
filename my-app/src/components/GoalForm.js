@@ -24,7 +24,7 @@ class HikeEditForm extends Component {
       evt.preventDefault()
       this.setState({ loadingStatus: true });
       const editedGoal = {
-        goal: this.state.goal
+        goal: parseInt(this.state.goal)
       };
       console.log("edited goal", editedGoal)
       UserManager.update(this.state.userId, editedGoal)

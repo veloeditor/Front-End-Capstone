@@ -18,6 +18,11 @@ class HikeEditForm extends Component {
       this.setState(stateToChange)
     }
 
+    handleCancel = (event) => {
+      event.preventDefault()
+      this.props.history.push("/hikes");
+  }
+
     updateExistingHike = evt => {
       evt.preventDefault()
       this.setState({ loadingStatus: true });
@@ -53,6 +58,7 @@ class HikeEditForm extends Component {
         <>
         <div className="task_form_container">
         <form>
+        <h3 className="add_hike_h3">Edit your hike:</h3>
           <fieldset>
             <div className="formgrid">
               <label htmlFor="name">Hike Name</label>
@@ -100,6 +106,7 @@ class HikeEditForm extends Component {
                 onClick={this.updateExistingHike}
                 className=""
               >Submit</button>
+              <button outline color="dark" size="sm" type="cancel" onClick={this.handleCancel}>Back</button>
             </div>
           </fieldset>
         </form>
