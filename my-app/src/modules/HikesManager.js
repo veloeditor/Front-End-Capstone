@@ -5,7 +5,7 @@ export default {
         return fetch(`${remoteURL}/hikes/${id}`).then(result => result.json())
       },
       getAll() {
-        return fetch(`${remoteURL}/hikes?_embed=trails`).then(result => result.json())
+        return fetch(`${remoteURL}/hikes?_expand=trail`).then(result => result.json())
       },
       delete(id) {
       return fetch(`${remoteURL}/hikes/${id}`, {

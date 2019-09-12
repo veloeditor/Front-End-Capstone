@@ -17,14 +17,14 @@ class HikeEditForm extends Component {
 
     handleCancel = (event) => {
       event.preventDefault()
-      this.props.history.push("/dashboard");
+      this.props.history.push("/");
   }
 
     updateExistingGoal = evt => {
       evt.preventDefault()
       this.setState({ loadingStatus: true });
       const editedGoal = {
-        goal: this.state.goal
+        goal: parseInt(this.state.goal)
       };
       console.log("edited goal", editedGoal)
       UserManager.update(this.state.userId, editedGoal)

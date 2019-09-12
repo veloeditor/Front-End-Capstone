@@ -1,5 +1,7 @@
 import React, { Component } from "react"
 import HikesManager from "../modules/HikesManager"
+import TrailsManager from '../modules/TrailsManager';
+
 // import "./OwnerForm.css"
 
 class HikeEditForm extends Component {
@@ -9,6 +11,8 @@ class HikeEditForm extends Component {
         date: "",
         miles: 0,
         comments: "",
+        trails: [],
+        trailId: 0,
         loadingStatus: true,
     };
 
@@ -17,6 +21,11 @@ class HikeEditForm extends Component {
       stateToChange[evt.target.id] = evt.target.value
       this.setState(stateToChange)
     }
+
+    handleCancel = (event) => {
+      event.preventDefault()
+      this.props.history.push("/hikes");
+  }
 
     updateExistingHike = evt => {
       evt.preventDefault()
@@ -53,6 +62,7 @@ class HikeEditForm extends Component {
         <>
         <div className="task_form_container">
         <form>
+        <h3 className="add_hike_h3">Edit your hike:</h3>
           <fieldset>
             <div className="formgrid">
               <label htmlFor="name">Hike Name</label>
@@ -100,6 +110,7 @@ class HikeEditForm extends Component {
                 onClick={this.updateExistingHike}
                 className=""
               >Submit</button>
+              <button outline color="dark" size="sm" type="cancel" onClick={this.handleCancel}>Back</button>
             </div>
           </fieldset>
         </form>

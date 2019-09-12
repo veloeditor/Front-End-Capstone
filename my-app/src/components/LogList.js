@@ -47,8 +47,7 @@ render(){
     return(
     <React.Fragment>
             <section className="hike-content">
-                <h1 className="hike_name">Hiking Log</h1>
-                <hr></hr>
+                <h1 className="hiking_log">Hiking Log</h1>
             <button outline color="secondary" size="sm"
                 onClick={() => {this.props.history.push("/hikes/new")}}>
                 Add a new hike
