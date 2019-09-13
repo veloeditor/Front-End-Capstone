@@ -1,18 +1,35 @@
 
 
-body {
+body, html {
   margin: 0;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  text-align: center;
-  background-color: #5e2c0b;
-}
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    margin: auto;
+    background: #5e2c0b url("./components/img/topo_map.png");
+    height: 100%;
+  
+    width: 100%;
+    background-size: cover;
+    margin: auto;
+    height: 100%;
+  }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-}
+  header {
+    height: 100%;
+  }
 
-.dashTop_container, .add_hike_container, .task_form_container, .goal_edit_container {
+  .header_img {
+    background: url(./components/img/shutterstock_226674508.png) no-repeat 50% 100%;
+    width: 100%;
+    background-size: cover;
+    margin: auto;
+    height: 100%;
+    padding-bottom: 10px;
+  
+  }
+
+
+.dashTop_container, .add_hike_container, .trail_form_container, .goal_edit_container {
   background-color: rgb(245, 212, 177);
   padding-bottom: 15px;
   border-style: solid;
@@ -20,8 +37,36 @@ code {
   border-color: rgb(46, 6, 6);
 }
 
+.trail_form_container, .add_hike_container {
+  text-align: left;
+  padding-left: 10px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.add_hike_h3 {
+  text-align: center;
+}
+.submit {
+  margin-right: 10px;
+}
+
+.form_buttons {
+  text-align: center;
+
+}
+
+input[type=text], select {
+  width: 80%;
+  padding: 5px 5px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
 .dashTop_container {
-  margin-top: 10px;
 }
 
 .userMiles, .userPerc {
@@ -42,13 +87,24 @@ code {
   margin-bottom: 5px;
 }
 
+.edit_button {
+  margin-right: 10px;
+}
+
 .card-content {
   background-color: rgb(245, 212, 177);
   padding-top: 5px;
   padding-bottom: 5px;
   margin-top: 15px;
   margin-bottom: 25px;
-  
+  padding-left: 10px;
+  padding-right: 10px;
+  line-height: 1.2em;
+}
+
+.card-content p {
+  margin-top: 5px;
+  margin-bottom: 15px;
 }
 
 .hiking_log {
@@ -67,28 +123,64 @@ code {
   text-align: center;
 }
 
-.dash_add_container, .dash_log_container {
-  background-color: rgb(245, 212, 177);
-  padding-bottom: 15px;
-  border-style: solid;
-  border-width: 18px;
-  border-color: rgb(46, 6, 6);
+.dash_options_container {
   display: flex;
   justify-content: center;
   align-content: center;
-  margin: 0;
-  height: 150px;
+  flex-direction: column;
+  
+}
+
+.dash_add_container, .dash_log_container {
+ 
+  padding-bottom: 15px;
+  border-style: solid;
+  /* border-width: 10px; */
+  border-color: rgb(46, 6, 6);
+  flex-basis: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  height: 180px;
+ 
+}
+
+.addHike_container {
+  height: 200px;
+}
+
+.addHike_container .dash_bg_image {
+    position: absolute;
+    background: #5e2c0b url("./components/img/trail_1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 200px; 
+}
+
+.viewLog_container .dash_bg_imageTwo {
+  position: absolute;
+  background: #5e2c0b url("./components/img/trail_2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 200px; 
 }
 
 .add_hike, .hike_log {
   align-content: center;
   justify-content: center;
-  margin-top: 70px;
   height: 40px;
-  font-size: 1.3em;
+  font-size: 1.2em;
   text-decoration: none;
+  margin: 0px;
+  text-align: center;
+  margin-top: 65px;
 
 }
+
 
 .sign_out {
   margin-bottom: 10px;
@@ -97,12 +189,12 @@ code {
 
 button {
   display: inline-block;
-  border: none;
-  margin: 0;
+  border: 1px solid #666;
+  margin: 1em, 1em;
   text-decoration: none;
-  background: rgb(87, 50, 11);
-  color: #ffffff;
- padding: 1em, 2em;
+  background-color: rgb(245, 212, 177);
+  color: #363636;
+  padding: 1.5em, 2em;
   font-size: 1rem;
   cursor: pointer;
   /* text-align: center; */
@@ -114,7 +206,8 @@ button {
 
 button:hover,
 button:focus {
-  background: #0053ba;
+  background: rgb(99, 13, 13);
+  color: white;
 }
 
 button:focus {
@@ -125,3 +218,4 @@ button:focus {
 button:active {
   transform: scale(0.99);
 }
+

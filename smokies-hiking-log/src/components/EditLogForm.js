@@ -11,7 +11,7 @@ class HikeEditForm extends Component {
         date: "",
         miles: 0,
         comments: "",
-        trails: [],
+        trail: {},
         trailId: 0,
         loadingStatus: true,
     };
@@ -53,6 +53,8 @@ class HikeEditForm extends Component {
             loadingStatus: false,
             userId: hike.userId,
             comments: hike.comments,
+            trailId: hike.trailId,
+            trail: hike.trail
           });
       });
     }
@@ -60,21 +62,21 @@ class HikeEditForm extends Component {
     render() {
       return (
         <>
-        <div className="task_form_container">
+        <div className="trail_form_container">
         <form>
         <h3 className="add_hike_h3">Edit your hike:</h3>
-          <fieldset>
+        
             <div className="formgrid">
-              <label htmlFor="name">Hike Name</label>
+              <label htmlFor="name">Hike Name: </label>
               <input
                 type="text"
                 required
-                className="form-control"
                 onChange={this.handleFieldChange}
                 id="name"
-                value={this.state.name}
+                value={this.state.trail.name}
               />
-              <label htmlFor="miles">Miles</label>
+              <br></br>
+              <label htmlFor="miles">Miles: </label>
                         <input
                         type="number"
                         required
@@ -84,8 +86,8 @@ class HikeEditForm extends Component {
                         placeholder="Miles"
                         value={this.state.miles}
                         />
-
-            <label htmlFor="date">Hike Date</label>  
+              <br></br>
+            <label htmlFor="date">Hike Date: </label>  
               <input
                 type="date"
                 required
@@ -94,25 +96,28 @@ class HikeEditForm extends Component {
                 id="date"
                 value={this.state.date}
               />
-              <label htmlFor="comments">Comments</label>
+              <br></br>
+              <label htmlFor="comments">Comments: </label>
                         <input
                         type="text"
                         required
                         className="form-control"
                         onChange={this.handleFieldChange}
                         id="comments"
+                        size="40"
+                      
                         value={this.state.comments}
                         />
             </div>
-            <div className="alignRight">
-            <button outline color="dark" size="sm"
+            <div className="form_buttons">
+            <button
                 type="button" disabled={this.state.loadingStatus}
                 onClick={this.updateExistingHike}
-                className=""
+                className="submit"
               >Submit</button>
-              <button outline color="dark" size="sm" type="cancel" onClick={this.handleCancel}>Back</button>
+              <button type="cancel" onClick={this.handleCancel}>Back</button>
             </div>
-          </fieldset>
+        
         </form>
         </div>
         </>

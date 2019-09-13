@@ -20,7 +20,7 @@ class HikeCard extends Component {
           <p>Miles: {this.props.hike.trail.miles}</p>
           <p>Comments: {this.props.hike.comments}</p>
           <div className="card__buttons">
-          <button outline color="dark" size="sm"
+          <button className="edit_button"
           onClick={() => {this.props.history.push(`/hikes/${this.props.hike.id}/edit`)}}>Edit</button>
           <button outline color="danger" size="sm" onClick={() => this.props.deleteHike(this.props.hike.id)}>Delete</button></div>
         </div></div>

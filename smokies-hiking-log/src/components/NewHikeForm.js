@@ -102,9 +102,11 @@ class NewHikeForm extends Component {
                         id="date"
                         placeholder="date"
                         />
+                        <br></br>
                         <label htmlFor="comments"> Comments: </label>
                         <input
                         type="text"
+                        size="50"
                         required
                         className="form-control"
                         onChange={this.handleFieldChange}
@@ -113,9 +115,10 @@ class NewHikeForm extends Component {
                         />
                         
                     </div>
-                    <div className="alignRight">
+                    <div className="form_buttons">
                         <button
                         type="button"
+                        className="submit"
                         disabled={this.state.loadingStatus}
                         onClick={this.constructNewHike}
                         >Submit</button>
