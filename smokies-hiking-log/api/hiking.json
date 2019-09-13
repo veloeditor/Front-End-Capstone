@@ -1,0 +1,194 @@
+{
+  "trails": [
+    {
+      "id": 1,
+      "name": "Abrams Falls",
+      "miles": 5.2,
+      "description": "A popular moderate hike that leads to a pretty 20-foot waterfall. Located in Cades Cove.",
+      "difficulty": "moderate",
+      "feature": "waterfalls",
+      "elevationGain": 1735,
+      "location": "Cades Cove",
+      "trailhead": "",
+      "link": "http://www.hikinginthesmokys.com/abrams.htm"
+    },
+    {
+      "id": 2,
+      "name": "Albright Grove Loop Trail",
+      "miles": 6.7,
+      "description": "This loop trail through an old growth forest is located off of the Maddron Bald Trail. Use the Maddron Bald trailhead to access.",
+      "difficulty": "moderate",
+      "feature": "forest",
+      "elevationGain": 1475,
+      "location": "Cosby",
+      "trailhead": "",
+      "link": "http://www.hikinginthesmokys.com/albrightgrove.htm"
+    },
+    {
+      "id": 3,
+      "name": "Alum Cave Hike",
+      "miles": 4.4,
+      "description": "This very popular hike takes you up to Alum Cave which isn't really a cave, but a rock overhang. One can continue on up to Mt. Leconte from this trail.",
+      "difficulty": "moderate",
+      "feature": "rock formations",
+      "elevationGain": 1125,
+      "location": "Newfound Gap/Clingmons Dome",
+      "trailhead": "35.63014, -83.44396",
+      "link": "http://www.hikinginthesmokys.com/alumcave.htm"
+    },
+    {
+      "id": 4,
+      "name": "Forney Ridge Trail to Andrews Bald",
+      "miles": 3.5,
+      "description": "This a relatively short, though moderate hike to Andrews Bald. Access from the Clingmons Dome parking area. This is a crowded area, but the moderate difficulty of the hike means less crowds on this trail. ",
+      "difficulty": "moderate",
+      "feature": "vistas",
+      "elevationGain": 899,
+      "location": "Newfound Gap/Clingmons Dome",
+      "trailhead": "35.55646, -83.49591",
+      "link": "http://www.hikinginthesmokys.com/andrewsbald.htm"
+    },
+    {
+      "id": 5,
+      "name": "Avent Cabin",
+      "miles": 2,
+      "description": "Park at the Jakes Creek Trailhead in the ELkmont area of the park. This is a relatively short hike to an old historical cabin structure. The Elkmont area was a popular vacation resort prior to the area becoming a national park.",
+      "difficulty": "easy",
+      "feature": "history",
+      "elevationGain": 505,
+      "location": "Elkmont",
+      "trailhead": "35.64764, -83.5832",
+      "link": "http://www.hikinginthesmokys.com/avent-cabin.htm"
+    },
+    {
+      "id": 6,
+      "name": "Balsam High Top",
+      "miles": 7.6,
+      "description": "A strenuous hike that follows the Benton MacKaye Trail as it climbs up Balsam Mountain. There are no views at the top, so do this hike for the exercise and the solitude.",
+      "difficulty": "hard",
+      "feature": "forests, solitude",
+      "elevationGain": 2535,
+      "location": "Balsam Mountain",
+      "trailhead": "35.62405, -83.2113",
+      "link": ""
+    },
+    {
+      "id": 7,
+      "name": "Baskins Creek Falls",
+      "miles": 3,
+      "description": "A hike close to Gatlinburg where you can view waterfall, take a short side trip to a cemetery, and see some views of nearby ridges and Gatlinburg. Tip: park on Cherokee Orchard Road before the beginning of the one-way Roaring Fork Motor trail. Take a short walk up the road to find the trailhead. When you leave you can make a return trip on Cherokee Orchard Road and avoid the typical slow, heavy traffic Roaring Fork Motor Trail",
+      "difficulty": "easy",
+      "feature": "waterfalls",
+      "elevationGain": 953,
+      "location": "Gatlinburg",
+      "trailhead": "35.62405, -83.2113",
+      "link": "http://www.hikinginthesmokys.com/baskins.htm"
+    },
+    {
+      "id": 8,
+      "name": "Mt. Cammerer",
+      "miles": 11.1,
+      "description": "This is a very challenging hike up to the top of Mt. Cammerer where you can see a commanding view of the surrounding mountains from an old fire lookout tower. This particular hike uses the Low Gap Trail from the Cosby area of the park. The hike up to the Appalachian Trail is demanding.",
+      "difficulty": "hard",
+      "feature": "vistas",
+      "elevationGain": 3045,
+      "location": "Cosby",
+      "trailhead": "35.75595, -83.20765",
+      "link": "http://www.hikinginthesmokys.com/cammerer.htm"
+    },
+    {
+      "id": 9,
+      "name": "The Jump Off",
+      "miles": 6.5,
+      "description": "This hike involves catching the Appalachian Trail from the Newfound Gap parking lot. Most of the hike is along this famous trail until you reach the Jump Off spur trail. At the Jump Off you'll have an amazing view. ",
+      "difficulty": "moderate",
+      "feature": "vistas",
+      "elevationGain": 1275,
+      "location": "Newfound Gap",
+      "trailhead": "35.61084, -83.42509",
+      "link": "http://www.hikinginthesmokys.com/jumpoff.htm"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "username": "BrianW",
+      "password": "b",
+      "goal": 45,
+      "completedMiles": 3
+    },
+    {
+      "username": "Jessica",
+      "password": "j",
+      "id": 2,
+      "completedMiles": 0,
+      "goal": "50"
+    },
+    {
+      "username": "Ben",
+      "password": "b",
+      "id": 3,
+      "completedMiles": 0,
+      "goal": "25"
+    },
+    {
+      "username": "John",
+      "password": "j",
+      "id": 4,
+      "completedMiles": 0,
+      "goal": 24
+    },
+    {
+      "username": "mike",
+      "password": "m",
+      "completedMiles": 0,
+      "goal": 35,
+      "id": 5
+    }
+  ],
+  "hikes": [
+    {
+      "id": 1,
+      "name": "Baskins Creek Falls",
+      "miles": 4.3,
+      "date": "2019-09-26",
+      "userId": 1,
+      "trailId": 7,
+      "comments": "Very hot hike and very dry until you reach the creek. Lots of bugs. Not one of my favorite hikes here."
+    },
+    {
+      "id": 2,
+      "name": "Abrams Falls Trail",
+      "miles": 4,
+      "date": "2019-09-23",
+      "userId": 1,
+      "trailId": 1,
+      "comments": "Beautiful!"
+    },
+    {
+      "name": "Mt. Cammerer",
+      "userId": 1,
+      "date": "2019-09-30",
+      "miles": 12,
+      "trailId": 8,
+      "comments": "it was cool",
+      "id": 4
+    },
+    {
+      "userId": 1,
+      "date": "2019-09-22",
+      "miles": 7.6,
+      "trailId": 6,
+      "comments": "Dfdf",
+      "id": 6
+    },
+    {
+      "userId": 1,
+      "date": "2019-09-24",
+      "miles": 11.1,
+      "trailId": 8,
+      "comments": "it was cool",
+      "id": 7
+    }
+  ]
+}
