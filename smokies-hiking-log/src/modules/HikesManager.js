@@ -2,7 +2,7 @@ const remoteURL = "http://localhost:5002"
 
 export default {
     get(id) {
-        return fetch(`${remoteURL}/hikes/${id}`).then(result => result.json())
+        return fetch(`${remoteURL}/hikes/${id}?_expand=trail`).then(result => result.json())
       },
       getAll() {
         return fetch(`${remoteURL}/hikes?_expand=trail`).then(result => result.json())
@@ -24,7 +24,7 @@ export default {
     },
     update(editedHike) {
       return fetch(`${remoteURL}/hikes/${editedHike.id}`, {
-        method: "PUT",
+        method: "PATCH",
         headers: {
           "Content-Type": "application/json"
         },
