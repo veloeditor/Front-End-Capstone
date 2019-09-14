@@ -82,6 +82,7 @@ class HikeEditForm extends Component {
                         required
                         onChange={this.handleFieldChange}
                         id="miles"
+                        size="5"
                     
                         placeholder="Miles"
                         value={this.state.miles}

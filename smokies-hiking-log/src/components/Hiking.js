@@ -11,7 +11,7 @@ class Hiking extends Component {
       <>
         <Header />
         <ApplicationViews />
-        <Footer />
+      
       </>
     )
   }

@@ -123,9 +123,7 @@ class NewHikeForm extends Component {
                         onClick={this.constructNewHike}
                         >Submit</button>
 
-                        <button outline color="dark" size="sm" type="cancel" onClick={this.handleCancel}>
-                                                Back
-                            </button>
+                        <button onClick={() => this.props.history.goBack()}>Back</button>
                     </div>
                    
                 </form>

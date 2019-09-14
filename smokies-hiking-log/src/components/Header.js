@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from "react-router-dom";
 
 
 class Header extends Component {
@@ -10,7 +11,7 @@ class Header extends Component {
       <header>
           <div className="header_img">
             <div className="logo_tag">
-                <span><img className="logo" src={ require('./img/logo.png')} alt="Nutshell logo"/></span>
+                <span><Link to={"/"}><img className="logo" src={ require('./img/logo.png')} alt="Nutshell logo"/></Link></span>
                 <h3 className="tag_name">800 miles of trails, endless adventure.</h3>
             </div>
             </div>
