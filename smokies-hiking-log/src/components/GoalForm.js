@@ -48,10 +48,11 @@ class HikeEditForm extends Component {
       return (
         <>
         <div className="goal_edit_container">
+        <h3 className="goal_h3">Enter a new goal:</h3>
         <form>
-          <fieldset>
             <div className="formgrid">
-              <label htmlFor="goal">Enter a new goal:</label>
+              <label htmlFor="goal">Your new goal: </label>
+              <br></br>
               <input
                 type="number"
                 required
@@ -67,11 +68,11 @@ class HikeEditForm extends Component {
                 onClick={this.updateExistingGoal}
                 className=""
               >Submit</button>
-               <button outline color="dark" size="sm" type="cancel" onClick={this.handleCancel}>
+               <button type="cancel" onClick={this.handleCancel}>
                         Cancel
             </button>
             </div>
-          </fieldset>
+          
         </form>
         </div>
         </>

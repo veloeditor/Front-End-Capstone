@@ -107,6 +107,18 @@
       "location": "Newfound Gap",
       "trailhead": "35.61084, -83.42509",
       "link": "http://www.hikinginthesmokys.com/jumpoff.htm"
+    },
+    {
+      "id": 10,
+      "name": "Bullhead Trail",
+      "miles": 5.9,
+      "description": "Start this hike from the Rainbow Falls trailhead parking lot. This trail was closed for a few years due to the wildfire that struck the area in late 2016. This trail can be used to reach the top of Mt. Leconte but this particular hike is most famous for reaching 'The Pulpit', a large rock cairn built by the CCC in the 1930s.",
+      "difficulty": "moderate",
+      "feature": "vistas",
+      "elevationGain": 1607,
+      "location": "Gatlinburg / Roaring Fork Motor Trail",
+      "trailhead": "35.67582, -83.48527",
+      "link": "http://www.hikinginthesmokys.com/bullhead.htm"
     }
   ],
   "users": [
@@ -114,7 +126,7 @@
       "id": 1,
       "username": "BrianW",
       "password": "b",
-      "goal": 45,
+      "goal": 60,
       "completedMiles": 3
     },
     {
@@ -149,6 +161,7 @@
   "hikes": [
     {
       "id": 1,
+      "name": "Baskins Creek Falls",
       "miles": 4.3,
       "date": "2019-09-26",
       "userId": 1,
@@ -157,6 +170,7 @@
     },
     {
       "id": 2,
+      "name": "Abrams Falls Trail",
       "miles": 4,
       "date": "2019-09-23",
       "userId": 1,
@@ -164,6 +178,16 @@
       "comments": "Beautiful!"
     },
     {
+      "id": 2,
+      "name": "Abrams Falls Trail",
+      "miles": 4,
+      "date": "2019-09-23",
+      "userId": 1,
+      "trailId": 1,
+      "comments": "Beautiful!"
+    },
+    {
+      "name": "Mt. Cammerer",
       "userId": 1,
       "date": "2019-09-30",
       "miles": 12,
@@ -184,7 +208,7 @@
       "date": "2019-09-24",
       "miles": 11.1,
       "trailId": 8,
-      "comments": "it was cool",
+      "comments": "Beautiful view from the top!",
       "id": 7
     }
   ]

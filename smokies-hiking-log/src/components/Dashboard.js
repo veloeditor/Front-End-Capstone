@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import HikesManager from "../modules/HikesManager"
 import UserManager from "../modules/UserManager"
+import 'react-circular-progressbar/dist/styles.css';
+import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
 
 
 
@@ -28,7 +30,7 @@ class Dashboard extends Component {
           console.log(this.state.totalMiles)
           console.log("user", users.goal)
           this.setState({goalPercentage: percentage})
-          if (percentage > 100) {
+          if (percentage >= 100) {
             alert("You beat your goal!  How about setting another?")
             this.props.history.push("/goal")
           }
@@ -47,7 +49,6 @@ class Dashboard extends Component {
     }
 
 
-
     componentDidMount(){
       const username = (JSON.parse(sessionStorage.getItem("credentials")))
       HikesManager.getAll(username.id)
@@ -61,18 +62,22 @@ class Dashboard extends Component {
   render() {
     const username = (JSON.parse(sessionStorage.getItem("credentials")))
 
+    const percentage = this.state.goalPercentage;
+ 
 
     return (
       <>
       <div className="dashboard_container">
         <div className="dashTop_container">
-          <br></br>
-          <h3 className="welcome_h3">Welcome, <span>{username.username}</span>!</h3>
-          <div> <button className="sign_out" onClick={this.logout}>Logout</button></div> 
-          <p>You've hiked <span className="userMiles">{this.state.totalMiles}</span> miles so far. <br></br>
-          You're <span className="userPerc">{this.state.goalPercentage}%</span> of your way towards your goal.</p>
-          <button className="goal_change" onClick={() => {this.props.history.push("/goal")}}>Change your goal</button>
-          
+          <div className="dash_topo_img">
+            <h3 className="welcome_h3">Welcome, <span>{username.username}</span>!</h3>
+            <div> <button className="sign_out" onClick={this.logout}>Logout</button></div> 
+            <p>You've hiked <span className="userMiles">{parseInt(this.state.totalMiles)}</span> miles so far. <br></br>
+            You're <span className="userPerc">{this.state.goalPercentage}%</span> of your way towards your goal.</p>
+            <CircularProgressbar className="progressBar" value={percentage} text={`${percentage}%`} styles={{path: {stroke: `#5e2c0b`}, trail: {stroke: `rgb(238, 226, 214)`}, text: {fill: `#333`}}}/>
+            <br></br>
+            <button className="goal_change" onClick={() => {this.props.history.push("/goal")}}>Change your goal</button>
+          </div>
         </div>
         <br></br>
         <div className="addHike_container">
