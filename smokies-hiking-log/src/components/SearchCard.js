@@ -18,7 +18,7 @@ class SearchCard extends Component {
                 <p><span className="card_item">Feature: </span>{this.props.trail.feature}</p>
                 <p><span className="card_item">Elevation Gain: </span>{this.props.trail.elevationGain}</p>
                 <p><span className="card_item">Area of Park: </span>{this.props.trail.location}</p>
-                <p><span className="card_item"> Trailhead on Google Maps: </span><a target="_blank" href={this.props.trail.trailhead}>Trailhead Location</a></p>
+                <p><span className="card_item">Trailhead on Google Maps: </span><a target="_blank" href={this.props.trail.trailhead}>Trailhead Location</a></p>
                 <a target="_blank" href={this.props.trail.link}>[More about this hike]</a>
             </div>
         </div>

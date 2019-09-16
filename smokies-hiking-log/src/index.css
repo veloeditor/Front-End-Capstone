@@ -33,12 +33,25 @@ body, html {
   
   }
 
-.dashTop_container, .add_hike_container, .trail_form_container, .goal_edit_container, .login_container  {
+.dashTop_container, .add_hike_container, .trail_form_container, .goal_edit_container, .login_container, .search_field, .trail-content {
   background-color: rgb(245, 212, 177);
   padding-bottom: 15px;
   border-style: solid;
   border-width: 18px;
   border-color: rgb(46, 6, 6);
+}
+
+.trail-content {
+  padding-bottom: 5px;
+}
+
+.search_words {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#search_field {
+  width: 275px;
 }
 
 .trail_form_container, .add_hike_container {
@@ -127,10 +140,14 @@ input[type=date] {
   margin-right: 10px;
 }
 
+.back_to_dashboard {
+  margin-top: 15px;
+}
+
 .card-content {
   background-color: rgb(245, 212, 177);
   padding-top: 5px;
-
+  width: 100%;
   margin-top: 15px;
   margin-bottom: 25px;
   padding-left: 10px;
@@ -161,7 +178,9 @@ a:hover {
 
 .card-content p {
   margin: 6px;
+  
 }
+
 
 .hike__name {
   margin-bottom: 7px;
@@ -272,6 +291,10 @@ a:hover {
 .sign_out {
   margin-bottom: 10px;
   height: 30px;
+}
+
+.back_to_dashboard {
+  margin-bottom: 10px;
 }
 
 button {
