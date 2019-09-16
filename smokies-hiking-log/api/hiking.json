@@ -9,7 +9,7 @@
       "feature": "waterfalls",
       "elevationGain": 1735,
       "location": "Cades Cove",
-      "trailhead": "",
+      "trailhead": "https://www.google.com/maps/search/?api=1&query=35.59126,-83.85250",
       "link": "http://www.hikinginthesmokys.com/abrams.htm"
     },
     {
@@ -21,7 +21,7 @@
       "feature": "forest",
       "elevationGain": 1475,
       "location": "Cosby",
-      "trailhead": "",
+      "trailhead": "https://www.google.com/maps/search/?api=1&query=35.76948,-83.26678",
       "link": "http://www.hikinginthesmokys.com/albrightgrove.htm"
     },
     {
@@ -33,7 +33,7 @@
       "feature": "rock formations",
       "elevationGain": 1125,
       "location": "Newfound Gap/Clingmons Dome",
-      "trailhead": "35.63014, -83.44396",
+      "trailhead": "https://www.google.com/maps/search/?api=1&query=35.63014,-83.44396",
       "link": "http://www.hikinginthesmokys.com/alumcave.htm"
     },
     {
@@ -45,7 +45,7 @@
       "feature": "vistas",
       "elevationGain": 899,
       "location": "Newfound Gap/Clingmons Dome",
-      "trailhead": "35.55646, -83.49591",
+      "trailhead": "https://www.google.com/maps/search/?api=1&query=35.55646,-83.49591",
       "link": "http://www.hikinginthesmokys.com/andrewsbald.htm"
     },
     {
@@ -57,7 +57,7 @@
       "feature": "history",
       "elevationGain": 505,
       "location": "Elkmont",
-      "trailhead": "35.64764, -83.5832",
+      "trailhead": "https://www.google.com/maps/search/?api=1&query=35.64764,-83.5832",
       "link": "http://www.hikinginthesmokys.com/avent-cabin.htm"
     },
     {
@@ -69,7 +69,7 @@
       "feature": "forests, solitude",
       "elevationGain": 2535,
       "location": "Balsam Mountain",
-      "trailhead": "35.62405, -83.2113",
+      "trailhead": "https://www.google.com/maps/search/?api=1&query=35.62405,-83.2113",
       "link": ""
     },
     {
@@ -81,7 +81,7 @@
       "feature": "waterfalls",
       "elevationGain": 953,
       "location": "Gatlinburg",
-      "trailhead": "35.62405, -83.2113",
+      "trailhead": "https://www.google.com/maps/search/?api=1&query=35.62405,-83.2113",
       "link": "http://www.hikinginthesmokys.com/baskins.htm"
     },
     {
@@ -93,7 +93,7 @@
       "feature": "vistas",
       "elevationGain": 3045,
       "location": "Cosby",
-      "trailhead": "35.75595, -83.20765",
+      "trailhead": "https://www.google.com/maps/search/?api=1&query=35.75595,-83.20765",
       "link": "http://www.hikinginthesmokys.com/cammerer.htm"
     },
     {
@@ -105,19 +105,19 @@
       "feature": "vistas",
       "elevationGain": 1275,
       "location": "Newfound Gap",
-      "trailhead": "35.61084, -83.42509",
+      "trailhead": "https://www.google.com/maps/search/?api=1&query=35.61084,-83.42509",
       "link": "http://www.hikinginthesmokys.com/jumpoff.htm"
     },
     {
       "id": 10,
-      "name": "Bullhead Trail",
+      "name": "The Bullhead Trail",
       "miles": 5.9,
       "description": "Start this hike from the Rainbow Falls trailhead parking lot. This trail was closed for a few years due to the wildfire that struck the area in late 2016. This trail can be used to reach the top of Mt. Leconte but this particular hike is most famous for reaching 'The Pulpit', a large rock cairn built by the CCC in the 1930s.",
       "difficulty": "moderate",
       "feature": "vistas",
       "elevationGain": 1607,
       "location": "Gatlinburg / Roaring Fork Motor Trail",
-      "trailhead": "35.67582, -83.48527",
+      "trailhead": "https://www.google.com/maps/search/?api=1&query=35.67582,-83.48527",
       "link": "http://www.hikinginthesmokys.com/bullhead.htm"
     }
   ],
@@ -182,7 +182,7 @@
       "name": "Abrams Falls Trail",
       "miles": 4,
       "date": "2019-09-23",
-      "userId": 1,
+      "userId": 2,
       "trailId": 1,
       "comments": "Beautiful!"
     },
@@ -190,9 +190,9 @@
       "name": "Mt. Cammerer",
       "userId": 1,
       "date": "2019-09-30",
-      "miles": 12,
+      "miles": 11.1,
       "trailId": 8,
-      "comments": "it was cool",
+      "comments": "Long exhausting hike but amazing views from the fire lookout tower!",
       "id": 4
     },
     {
@@ -200,7 +200,7 @@
       "date": "2019-09-22",
       "miles": 7.6,
       "trailId": 6,
-      "comments": "Dfdf",
+      "comments": "Great view from the top!",
       "id": 6
     },
     {

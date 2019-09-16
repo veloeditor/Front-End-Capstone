@@ -49,26 +49,25 @@ class Login extends Component {
             <div className="login_container">
             <form onSubmit={this.handleLogin}>
                 <h2 className="welcome">The Smokies Hiking Log</h2>
-                <fieldset>
                     <h3>Login</h3>
                     <div className="formgrid">
-                        <label htmlFor="inputUsername">Email</label>
+                        <label htmlFor="inputUsername">Username: </label>
                         <input onChange={this.handleFieldChange} type="username"
                             id="username"
-                            placeholder="Enter email address"
+                            placeholder="Enter username"
                             required="" autoFocus="" />
-                        <label htmlFor="inputPassword">Password</label>
+                            <br></br>
+                        <label htmlFor="inputPassword"> Password: </label>
                         <input onChange={this.handleFieldChange} type="password"
                             id="password"
                             placeholder="Password"
                             required="" />
                     </div>
-                    <button outline color="dark" size="sm" type="submit">
+                    <button className="log_button" type="submit">
                         Submit
             </button>
             <br></br>
                     <Link className="nav-link_login" to="/register">Don't have an account?</Link>
-                </fieldset>
             </form></div>
         )
     }
