@@ -61,33 +61,31 @@ class Register extends Component {
             <div className="login_container">
                 <form onSubmit={this.handleRegister}>
                 <h2 className="welcome">The Smokies Hiking Log</h2>
-                <fieldset>
                     <h3>Register</h3>
                     <div className="formgrid">
-                        <label htmlFor="inputUsername">Username</label>
+                        <label htmlFor="inputUsername">Username: </label>
                         <input onChange={this.handleFieldChange} type="username"
                             id="username"
-                            placeholder="Enter username"
+                            placeholder="Enter a username"
                             required="" autoFocus="" />
-                        <label htmlFor="inputPassword">Password</label>
+                            <br></br>
+                        <label htmlFor="inputPassword">Password: </label>
                         <input onChange={this.handleFieldChange} type="password"
                             id="password"
-                            placeholder="Password"
+                            placeholder="Enter a password"
                             required="" />
-                        <label htmlFor="inputGoal">Enter your mileage goal</label>
+                            <br></br>
+                        <label htmlFor="inputGoal">Your Goal: </label>
                         <input onChange={this.handleFieldChange} type="integer" min="1" max="800"
                             id="goal"
-                            placeholder="Goal in Miles"
+                            placeholder="Enter a goal in miles"
                             required=""
                             />
                     </div>
-                    <button outline color="dark" size="sm" type="submit">
-                        Submit
-            </button>
-            <button outline color="dark" size="sm" type="cancel" onClick={this.handleCancel}>
-                        Cancel
-            </button>
-                </fieldset>
+                    <div className="reg_buttons">
+                    <button type="submit">Submit</button>
+            <button type="cancel" onClick={this.handleCancel}>Cancel</button>
+            </div>
             </form>
             </div>
         )

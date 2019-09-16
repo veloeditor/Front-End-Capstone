@@ -3,6 +3,7 @@ import React, { Component } from "react";
 import Login from "../auth/Login"
 import Register from "../auth/Register"
 import LogList from './LogList'
+import SearchList from './SearchList'
 import NewHikeForm from './NewHikeForm'
 import EditLogForm from './EditLogForm'
 import GoalForm from './GoalForm'
@@ -37,6 +38,13 @@ class ApplicationViews extends Component {
           <Route exact path="/hikes" render={(props) => {
            if (this.isAuthenticated()) {
              return <LogList {...props} />
+           } else {
+            return <Redirect to="/login" />
+           }
+        }} />
+        <Route exact path="/trails" render={(props) => {
+           if (this.isAuthenticated()) {
+             return <SearchList {...props} />
            } else {
             return <Redirect to="/login" />
            }

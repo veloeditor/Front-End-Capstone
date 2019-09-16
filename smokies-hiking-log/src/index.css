@@ -9,7 +9,6 @@ body, html {
     margin: auto;
     background: #5e2c0b url("./components/img/topo_map.png");
     height: 100%;
-  
     width: 100%;
     background-size: cover;
     margin: auto;
@@ -34,19 +33,12 @@ body, html {
   
   }
 
-
-.dashTop_container, .add_hike_container, .trail_form_container, .goal_edit_container {
+.dashTop_container, .add_hike_container, .trail_form_container, .goal_edit_container, .login_container  {
   background-color: rgb(245, 212, 177);
   padding-bottom: 15px;
   border-style: solid;
   border-width: 18px;
   border-color: rgb(46, 6, 6);
-}
-
-
-
-.goal_edit_container {
-  
 }
 
 .trail_form_container, .add_hike_container {
@@ -55,6 +47,7 @@ body, html {
   max-width: 800px;
   margin: auto;
 }
+
 
 .add_hike_h3 {
   text-align: center;
@@ -65,7 +58,11 @@ body, html {
 
 .form_buttons {
   text-align: center;
+}
 
+.log_button {
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 .sign_out {
@@ -83,6 +80,21 @@ input[type=text], input[type=date], input[type=number], select {
   box-sizing: border-box;
 }
 
+.reg_buttons {
+  margin-top: 15px;
+}
+
+#username, #password {
+  width: 180px;
+  padding: 5px 5px;
+  outline: 0px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid rgb(58, 0, 0);
+  border-radius: 2px;
+  box-sizing: border-box;
+}
+
 input[type=number] {
   width: 50px;
 }
@@ -91,9 +103,6 @@ input[type=date] {
   width: 130px;
 }
 
-
-.dashTop_container {
-}
 
 .userMiles, .userPerc {
   font-weight: bold;
@@ -121,57 +130,89 @@ input[type=date] {
 .card-content {
   background-color: rgb(245, 212, 177);
   padding-top: 5px;
-  padding-bottom: 5px;
+
   margin-top: 15px;
   margin-bottom: 25px;
   padding-left: 10px;
   padding-right: 10px;
+  padding-bottom: 15px;
   line-height: 1.2em;
   border: 3px solid rgb(58, 0, 0);
 }
 
-.card-content p {
-  margin-top: 5px;
-  margin-bottom: 15px;
+.card-content:hover {
+  background-color: rgb(255, 255, 255);
 }
+
+a {
+  text-decoration: none;
+  color: rgb(77, 11, 11);
+  font-weight: bold;
+  font-size: .9em;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.card_item {
+  font-size: .9em;
+}
+
+.card-content p {
+  margin: 6px;
+}
+
+.hike__name {
+  margin-bottom: 7px;
+  font-size: 1.4em;
+}
+
+.card__buttons {
+  margin-top: 10px;
+}
+
 
 .hiking_log {
   color: rgb(230, 230, 230);
-  
-}
-
-.footer {
   background-color: rgb(245, 212, 177);
-  height: 30px;
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  color: white;
+  width: 150px;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: black;
   text-align: center;
+  border: 4px;
 }
 
-.dash_options_container {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  flex-direction: column;
-  
+.trail_search {
+  color: black;
+  background-color: rgb(245, 212, 177);
+  width: 320px;
+  text-align: center;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
-.dash_add_container, .dash_log_container {
- 
+
+
+.dash_content_Container {
+  height: 100%;
+}
+
+.dash_add_container, .dash_log_container, .search__container {
   padding-bottom: 15px;
   border-style: solid;
   /* border-width: 10px; */
   border-color: rgb(46, 6, 6);
-  flex-basis: 100%;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: center;
   height: 180px;
- 
 }
+
 
 .addHike_container {
   height: 180px;
@@ -202,7 +243,18 @@ input[type=date] {
   height: 180px; 
 }
 
-.add_hike, .hike_log {
+.search_container .dash_bg_imageThree {
+  position: absolute;
+  background: #5e2c0b url("./components/img/trail_2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 180px; 
+}
+
+ /* main page buttons for features */
+.add_hike, .hike_log, .view_trails {
   align-content: center;
   justify-content: center;
   height: 40px;
@@ -211,9 +263,11 @@ input[type=date] {
   margin: 0px;
   text-align: center;
   margin-top: 68px;
-
 }
 
+.hike_log {
+  margin-left: 10px;
+}
 
 .sign_out {
   margin-bottom: 10px;
@@ -251,4 +305,3 @@ button:focus {
 button:active {
   transform: scale(0.99);
 }
-

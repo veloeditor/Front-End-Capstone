@@ -67,35 +67,39 @@ class Dashboard extends Component {
 
     return (
       <>
-      <div className="dashboard_container">
         <div className="dashTop_container">
           <div className="dash_topo_img">
             <h3 className="welcome_h3">Welcome, <span>{username.username}</span>!</h3>
             <div> <button className="sign_out" onClick={this.logout}>Logout</button></div> 
             <p>You've hiked <span className="userMiles">{parseInt(this.state.totalMiles)}</span> miles so far. <br></br>
             You're <span className="userPerc">{this.state.goalPercentage}%</span> of your way towards your goal.</p>
-            <CircularProgressbar className="progressBar" value={percentage} text={`${percentage}%`} styles={{path: {stroke: `#5e2c0b`}, trail: {stroke: `rgb(238, 226, 214)`}, text: {fill: `#333`}}}/>
+            <CircularProgressbar className="progressBar" value={percentage} text={`${percentage}%`} styles={{path: {stroke: `#5e2c0b`}, trail: {stroke: `#1111)`}, text: {fill: `#333`}}}/>
             <br></br>
             <button className="goal_change" onClick={() => {this.props.history.push("/goal")}}>Change your goal</button>
           </div>
         </div>
         <br></br>
-        <div className="addHike_container">
-          <div className="dash_bg_image">
-            <div className="dash_add_container">
-              <button className="add_hike" onClick={() => {this.props.history.push("/hikes/new")}}>Log your hike</button>
-            </div></div>   
-          </div>
-
-        <br></br>
-        <div className="viewLog_container">
-          <div className="dash_bg_imageTwo">
-              <div className="dash_log_container">
-                <button className="hike_log" onClick={() => {this.props.history.push("/hikes")}}>View your hikes</button>
+        <div className="dash_content_Container">
+          <div className="addHike_container">
+              <div className="dash_bg_image">
+                <div className="dash_add_container">
+                  <button className="add_hike" onClick={() => {this.props.history.push("/hikes/new")}}>Log your hike</button>
+                  <button className="hike_log" onClick={() => {this.props.history.push("/hikes")}}>View your hikes</button>
+                </div>
+              </div>   
+            </div>
+          <br></br>
+          <div className="viewLog_container">
+              <div className="dash_bg_imageTwo">
+                  <div className="dash_log_container">
+                    
+                    <button className="view_trails" onClick={() => {this.props.history.push("/trails")}}>Trails of the Smokies</button>
+                  </div>
               </div>
-         </div>
+          </div>
+          <br></br>
         </div>
-      </div>
+    
       </>
     )
   }
