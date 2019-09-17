@@ -2,36 +2,35 @@ import React, { Component } from "react"
 import SearchCard from './SearchCard'
 import TrailsManager from '../modules/TrailsManager'
 
-  
+//search function that returns the fields which the filter will work - name, difficulty and location
 const searchingFor = (term) => {
     return function(x){
-        return x.name.toLowerCase().includes(term.toLowerCase()) || x.difficulty.toLowerCase().includes(term.toLowerCase()) || x.location.toLowerCase().includes(term.toLowerCase())|| !term;
+        return x.name.toLowerCase().includes(term.toLowerCase()) || x.difficulty.toLowerCase().includes(term.toLowerCase()) || x.feature.toLowerCase().includes(term.toLowerCase()) 
+        || x.location.toLowerCase().includes(term.toLowerCase())|| !term;
     }
   }
   
 
 class SearchList extends Component {
 
-state = {
-    trails: [],
-}
+    state = {
+        trails: [],
+    }
 
+    componentDidMount(){
+        TrailsManager.getAll()
+        .then((trails) => {
 
-componentDidMount(){
-    TrailsManager.getAll()
-    .then((trails) => {
-
-        this.setState({
-            trails: trails,
-            term: "",
+            this.setState({
+                trails: trails,
+                term: "",
+            })
         })
-    })
-    this.searchHandler = this.searchHandler.bind(this);
+        this.searchHandler = this.searchHandler.bind(this);
 }
 
 
-      
-      
+    //handler function for search field   
     searchHandler(event){
       this.setState({ term : event.target.value })
       console.log(event.target.value);

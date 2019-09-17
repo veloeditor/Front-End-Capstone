@@ -12,13 +12,14 @@ class NewHikeForm extends Component {
         userId: 0
     };
 
-
+    //what happens when we use the dropdown select. function has been replaced by handleTrailChange below
     handleFieldChange = evt => {
         const stateToChange = {};
         stateToChange[evt.target.id] = evt.target.value;
         this.setState(stateToChange);
     };
 
+    //function that determines what happens when user selects something but also reads the miles for that trail and uses that number for hike miles.
     handleTrailChange = evt => {
         const stateToChange = {};
         const trailMiles = this.state.trails.filter((trail) => trail.id == evt.target.value)[0].miles
@@ -28,6 +29,7 @@ class NewHikeForm extends Component {
         this.setState(stateToChange);
     };
 
+    //Cancel or back button
     handleCancel = (event) => {
         event.preventDefault()
         this.props.history.push("/hikes");

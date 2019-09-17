@@ -103,7 +103,7 @@ class HikeEditForm extends Component {
                         required
                         className="form-control"
                         onChange={this.handleFieldChange}
-                        id="comments_form"
+                        id="comments"
                         size="40"
                       
                         value={this.state.comments}
