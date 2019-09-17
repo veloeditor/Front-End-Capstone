@@ -20,7 +20,7 @@ body, html {
   }
 
   .logo {
-    max-width: 375px;
+    max-width: 320px;
   }
 
   .header_img {
@@ -48,10 +48,25 @@ body, html {
 .search_words {
   padding-left: 10px;
   padding-right: 10px;
+  text-align: left;
+  font-size: .8em;
 }
 
 #search_field {
   width: 275px;
+}
+
+input#name {
+  width: 200px;
+
+}
+
+input#date.form-control {
+  margin-left: 7px;
+}
+
+input#miles {
+  margin-left: 40px;
 }
 
 .trail_form_container, .add_hike_container {
@@ -145,16 +160,19 @@ input[type=date] {
 }
 
 .card-content {
-  background-color: rgb(245, 212, 177);
+  background-color: rgb(250, 235, 223);
   padding-top: 5px;
-  width: 100%;
+  width: 90%;
+  margin: auto;
   margin-top: 15px;
+  border-radius: 10px;
   margin-bottom: 25px;
   padding-left: 10px;
   padding-right: 10px;
   padding-bottom: 15px;
   line-height: 1.2em;
   border: 3px solid rgb(58, 0, 0);
+  box-shadow: 2px 2px 15px rgb(41, 40, 40);
 }
 
 .card-content:hover {
@@ -178,11 +196,27 @@ a:hover {
 
 .card-content p {
   margin: 6px;
-  
+}
+
+.trail_stats {
+  font-size: .9em;
+}
+
+#comments {
+  text-align: left;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: 1em;
+  padding-bottom: 10px;
+}
+
+p.card_miles {
+  margin-top: 0px;
+  margin-bottom: 10px;
 }
 
 
-.hike__name {
+.hike__name, .trail_name {
   margin-bottom: 7px;
   font-size: 1.4em;
 }
@@ -193,32 +227,33 @@ a:hover {
 
 
 .hiking_log {
-  color: rgb(230, 230, 230);
-  background-color: rgb(245, 212, 177);
+  color: rgb(245, 212, 177);
+  /* background-color: rgb(245, 212, 177); */
   width: 150px;
   margin: auto;
   margin-top: 20px;
   margin-bottom: 20px;
   padding-top: 5px;
   padding-bottom: 5px;
-  color: black;
   text-align: center;
   border: 4px;
 }
 
 .trail_search {
   color: black;
-  background-color: rgb(245, 212, 177);
+ 
   width: 320px;
   text-align: center;
   margin: auto;
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   padding-top: 5px;
   padding-bottom: 5px;
 }
 
-
+#comments.card_item {
+  margin-bottom: 0px;
+}
 
 .dash_content_Container {
   height: 100%;
@@ -293,13 +328,32 @@ a:hover {
   height: 30px;
 }
 
-.back_to_dashboard {
+.back_to_dashboard, .pick_trail {
   margin-bottom: 10px;
+  background: rgb(99, 13, 13);
+  color: white;
+}
+
+.pick_trail {
+  margin-bottom: 10px;
+  background: rgb(99, 13, 13);
+  color: white;
+  font-size: .8em;
+}
+
+.pick_trail:hover {
+  background-color: rgb(245, 212, 177);
+  color: #363636;
+}
+
+.back_to_dashboard:hover {
+  background-color: rgb(245, 212, 177);
+  color: #363636;
 }
 
 button {
   display: inline-block;
-  border: 1px solid #666;
+  border: 2px solid rgb(0, 0, 0);
   margin: 1em, 1em;
   text-decoration: none;
   background-color: rgb(245, 212, 177);
@@ -318,6 +372,31 @@ button:hover,
 button:focus {
   background: rgb(99, 13, 13);
   color: white;
+}
+
+#back_to_dashboard {
+  margin-left: 5px;
+}
+.edit_button {
+  display: inline-block;
+  border: 1px solid #666;
+  margin: 1em, 1em;
+  text-decoration: none;
+  background: rgb(99, 13, 13);
+  color: white;
+  padding: 1.5em, 2em;
+  font-size: 1rem;
+  cursor: pointer;
+  /* text-align: center; */
+  transition: background 250ms ease-in-out, 
+              transform 150ms ease;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.edit_button:hover {
+  background-color: rgb(245, 212, 177);
+  color: #363636;
 }
 
 button:focus {

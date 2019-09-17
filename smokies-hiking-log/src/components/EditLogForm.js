@@ -1,6 +1,5 @@
 import React, { Component } from "react"
 import HikesManager from "../modules/HikesManager"
-import TrailsManager from '../modules/TrailsManager';
 
 // import "./OwnerForm.css"
 
@@ -104,7 +103,7 @@ class HikeEditForm extends Component {
                         required
                         className="form-control"
                         onChange={this.handleFieldChange}
-                        id="comments"
+                        id="comments_form"
                         size="40"
                       
                         value={this.state.comments}

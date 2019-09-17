@@ -5,6 +5,7 @@
   "dependencies": {
     "bootstrap": "^4.3.1",
     "react": "^16.9.0",
+    "react-bootstrap-sweetalert": "^4.4.1",
     "react-chartjs-2": "^2.7.6",
     "react-circular-progressbar": "^2.0.2",
     "react-dom": "^16.9.0",
