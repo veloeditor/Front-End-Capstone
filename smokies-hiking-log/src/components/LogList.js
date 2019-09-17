@@ -48,14 +48,8 @@ render(){
     <React.Fragment>
             <section className="hike-content">
                 <h1 className="hiking_log">Hiking Log</h1>
-            <button outline color="secondary" size="sm"
-                onClick={() => {this.props.history.push("/hikes/new")}}>
-                Add a new hike
-            </button>
-            <button outline color="secondary" size="sm"
-                onClick={() => {this.props.history.push("/")}}>
-                Back to Dashboard
-            </button>
+            <button id="add_a_hike" onClick={() => {this.props.history.push("/hikes/new")}}>Add a new hike</button>
+            <button id="back_to_dashboard" onClick={() => {this.props.history.push("/")}}>Back to Dashboard</button>
             </section>
             <div className="hike_container">
                 {this.state.hikes.filter(hike => hike.userId === username.id)

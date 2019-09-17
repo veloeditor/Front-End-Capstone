@@ -38,7 +38,7 @@
     },
     {
       "id": 4,
-      "name": "Forney Ridge Trail to Andrews Bald",
+      "name": "Forney Ridge Trail/Andrews Bald",
       "miles": 3.5,
       "description": "This a relatively short, though moderate hike to Andrews Bald. Access from the Clingmons Dome parking area. This is a crowded area, but the moderate difficulty of the hike means less crowds on this trail. ",
       "difficulty": "moderate",
@@ -70,7 +70,7 @@
       "elevationGain": 2535,
       "location": "Balsam Mountain",
       "trailhead": "https://www.google.com/maps/search/?api=1&query=35.62405,-83.2113",
-      "link": ""
+      "link": "http://www.hikinginthesmokys.com/balsam-high-top.htm"
     },
     {
       "id": 7,
@@ -126,7 +126,7 @@
       "id": 1,
       "username": "BrianW",
       "password": "b",
-      "goal": 60,
+      "goal": 50,
       "completedMiles": 3
     },
     {
@@ -175,7 +175,7 @@
       "date": "2019-09-23",
       "userId": 1,
       "trailId": 1,
-      "comments": "Beautiful!"
+      "comments": "Beautiful hike but very crowded. One of the busiest trails in the park."
     },
     {
       "id": 2,
@@ -200,7 +200,7 @@
       "date": "2019-09-22",
       "miles": 7.6,
       "trailId": 6,
-      "comments": "Great view from the top!",
+      "comments": "This is a long slog up a ridge without any views at the top. Do this for the exercise.",
       "id": 6
     },
     {
@@ -208,7 +208,7 @@
       "date": "2019-09-24",
       "miles": 11.1,
       "trailId": 8,
-      "comments": "Beautiful view from the top!",
+      "comments": "Beautiful view from an old firetower lookout tower at the top.",
       "id": 7
     }
   ]

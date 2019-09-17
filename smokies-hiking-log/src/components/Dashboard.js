@@ -5,7 +5,6 @@ import 'react-circular-progressbar/dist/styles.css';
 import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
 
 
-
 class Dashboard extends Component {
   
   state = {
@@ -14,12 +13,14 @@ class Dashboard extends Component {
     users: [],
     goalPercentage: 0,
     goal: 0,
+    alert: null,
 }
 
   logout = () => {
     sessionStorage.clear()
     this.props.history.push("/login")
     }
+
 
     userGoalProgress = () => {
       const username = (JSON.parse(sessionStorage.getItem("credentials")))
@@ -73,7 +74,11 @@ class Dashboard extends Component {
             <div> <button className="sign_out" onClick={this.logout}>Logout</button></div> 
             <p>You've hiked <span className="userMiles">{parseInt(this.state.totalMiles)}</span> miles so far. <br></br>
             You're <span className="userPerc">{this.state.goalPercentage}%</span> of your way towards your goal.</p>
-            <CircularProgressbar className="progressBar" value={percentage} text={`${percentage}%`} styles={{path: {stroke: `#5e2c0b`}, text: {fill: `#333`}, trailColor: '#f9af32'}}/>
+            <CircularProgressbar className="progressBar" value={percentage} text={`${percentage}%`} styles={buildStyles({
+          textColor: 'black',
+          pathColor: 'rgb(99, 13, 13)',
+          trailColor: 'white',
+        })}/>
             <br></br>
             <button className="goal_change" onClick={() => {this.props.history.push("/goal")}}>Change your goal</button>
           </div>
@@ -83,8 +88,8 @@ class Dashboard extends Component {
           <div className="addHike_container">
               <div className="dash_bg_image">
                 <div className="dash_add_container">
-                  <button className="add_hike" onClick={() => {this.props.history.push("/hikes/new")}}>Log your hike</button>
-                  <button className="hike_log" onClick={() => {this.props.history.push("/hikes")}}>View your hikes</button>
+                  {/* <button className="add_hike" onClick={() => {this.props.history.push("/hikes/new")}}>Log your hike</button> */}
+                  <button className="hike_log" onClick={() => {this.props.history.push("/hikes")}}>Your Hiking Log</button>
                 </div>
               </div>   
             </div>

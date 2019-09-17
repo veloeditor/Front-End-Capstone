@@ -106,11 +106,11 @@ class NewHikeForm extends Component {
                         <label htmlFor="comments"> Comments: </label>
                         <input
                         type="text"
-                        size="50"
+                       
                         required
                         className="form-control"
                         onChange={this.handleFieldChange}
-                        id="comments"
+                        id="comments_form"
                         placeholder="Trail Comments"
                         />
                         

@@ -42,8 +42,8 @@ componentDidMount(){
       return (
           <>
         <section className="trail-content">
-            <h1 className="trail_search">Smoky Mountain Hikes</h1>
-            <label htmlFor="text" className="search_words">Search by trail name, difficulty (easy, moderate or hard) or park location: </label>
+            <h1 className="trail_search">Find a new trail to do:</h1>
+            <label htmlFor="text" className="search_words">Search by trail name, difficulty (easy, moderate or hard) or location: </label>
             <form>
             <input type="text" placeholder="Enter search terms here" id="search_field" onChange={this.searchHandler} value={term}/>
             </form>
@@ -54,14 +54,14 @@ componentDidMount(){
                 <div className="card">
                     <div key={trail.id} className="card-content">
                         <h3 className="trail_name">{trail.name}</h3>
-                        <p><span className="card_item">Miles: </span>{trail.miles}</p>
-                        <p><span className="card_item">Description: </span>{trail.description}</p>
-                        <p><span className="card_item">Difficulty: </span>{trail.difficulty}</p>
-                        <p><span className="card_item">Feature: </span>{trail.feature}</p>
-                        <p><span className="card_item">Elevation Gain: </span>{trail.elevationGain}</p>
-                        <p><span className="card_item">Area of Park: </span>{trail.location}</p>
+                        <p className="card_miles"><span>Length: </span>{trail.miles}</p>
+                        <p id="comments" className="card_item">{trail.description}</p>
+                        <span className="trail_stats">{trail.difficulty} hike | {trail.feature} | {trail.elevationGain}ft. elevation gain | {trail.location}</span>
                         <p><span className="card_item">Trailhead on Google Maps: </span><a target="_blank" href={trail.trailhead}>Trailhead Location</a></p>
                         <a target="_blank" href={trail.link}>[More about this hike]</a>
+                            <div className="card__buttons">
+                                {/* <button className="pick_trail"onClick={() => {this.props.history.push("/")}}>Log this trail</button> */}
+                            </div>
                     </div>
                     </div>
             )}
