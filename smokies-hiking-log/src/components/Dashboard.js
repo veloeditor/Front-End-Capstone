@@ -74,10 +74,10 @@ class Dashboard extends Component {
             <div> <button className="sign_out" onClick={this.logout}>Logout</button></div> 
             <p>You've hiked <span className="userMiles">{parseInt(this.state.totalMiles)}</span> miles so far. <br></br>
             You're <span className="userPerc">{this.state.goalPercentage}%</span> of your way towards your goal.</p>
-            <CircularProgressbar className="progressBar" value={percentage} text={`${percentage}%`} styles={buildStyles({
+            <CircularProgressbar className="progressBar" value={percentage} text={`${percentage}%`} strokeWidth={14} styles={buildStyles({
           textColor: 'black',
-          pathColor: 'rgb(99, 13, 13)',
-          trailColor: 'white',
+          pathColor: '#a8ba36',
+          trailColor: 'darkred',
         })}/>
             <br></br>
             <button className="goal_change" onClick={() => {this.props.history.push("/goal")}}>Change your goal</button>

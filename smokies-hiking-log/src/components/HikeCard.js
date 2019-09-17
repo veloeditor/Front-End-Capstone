@@ -1,8 +1,6 @@
 import React, { Component } from 'react'
 
-
-
-
+//this is the component that builds the card each hike will use. child of LogList.js.
 class HikeCard extends Component {
  
     handleCheck = event => {
@@ -17,7 +15,7 @@ class HikeCard extends Component {
         <div className="card-content">
         <h3 className="hike__name">{this.props.hike.trail.name}</h3>
           <p>{this.props.hike.date} | {this.props.hike.trail.miles} miles</p>
-          <p id="comments">{this.props.hike.comments}</p>
+          <p className="comments">{this.props.hike.comments}</p>
           <p>Link: <a target="_blank" href={this.props.hike.trail.link}>More about this hike</a></p>
           <div className="card__buttons">
           <button className="edit_button"

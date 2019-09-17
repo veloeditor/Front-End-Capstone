@@ -8,8 +8,7 @@ class LogList extends Component {
         hikes: [],
     }
 
-    
-
+//lifecycle that sets state of all hikes
 componentDidMount(){
     const username = (JSON.parse(sessionStorage.getItem("credentials")))
     HikesManager.getAll(username.id)
@@ -21,7 +20,7 @@ componentDidMount(){
     })
 }
 
-
+//delete hike logic
 deleteHike = id => {
     const username = (JSON.parse(sessionStorage.getItem("credentials")))
     HikesManager.delete(id)
@@ -35,6 +34,7 @@ deleteHike = id => {
     })
 }
 
+//update hike logic
 updateHike = hikeObj => {
     HikesManager.saveEditedHike(hikeObj)
         .then(() => {
