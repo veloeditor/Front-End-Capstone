@@ -210,6 +210,14 @@
       "trailId": 8,
       "comments": "Beautiful view from an old firetower lookout tower at the top.",
       "id": 7
+    },
+    {
+      "userId": 1,
+      "date": "2019-09-09",
+      "miles": 3,
+      "trailId": 7,
+      "comments": "",
+      "id": 8
     }
   ]
 }

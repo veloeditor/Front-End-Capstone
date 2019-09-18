@@ -33,11 +33,46 @@ body, html {
   
   }
 
+  .goal_congrats {
+    margin-bottom: 5px;
+    margin-top: 5px;
+    font-size: 1.3em;
+  }
+
+  @keyframes bounceIn {
+    0% {
+      transform: scale(0.1);
+      opacity: 0;
+    }
+    60% {
+      transform: scale(1.2);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  .checkmark {
+    margin-top: 15px;
+    animation: bounceIn 1s;
+  }
+
 .dashTop_container, .add_hike_container, .trail_form_container, .goal_edit_container, .login_container, .search_field, .trail-content {
   background-color: rgb(245, 212, 177);
   padding-bottom: 15px;
   border-style: solid;
   border-width: 5px;
+  border-color: rgb(46, 6, 6);
+}
+
+.Modal {
+  background-color: rgb(245, 212, 177);
+  margin: auto;
+  position: absolute;
+  border-style: solid;
+  border-width: 5px;
+  height: 300px;
   border-color: rgb(46, 6, 6);
 }
 
@@ -224,7 +259,7 @@ p.card_miles {
 
 
 .hike__name, .trail_name {
-  margin-bottom: 7px;
+  margin-bottom: 3px;
   font-size: 1.4em;
 }
 
@@ -236,7 +271,7 @@ p.card_miles {
 .hiking_log {
   color: rgb(245, 212, 177);
   /* background-color: rgb(245, 212, 177); */
-  width: 150px;
+ 
   margin: auto;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -245,6 +280,7 @@ p.card_miles {
   text-align: center;
   text-shadow: 2px 2px 8px rgb(32, 32, 32);
   border: 4px;
+  font-size: 1.3em;
 }
 
 .trail_search {

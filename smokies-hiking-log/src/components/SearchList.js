@@ -42,7 +42,7 @@ class SearchList extends Component {
           <>
         <section className="trail-content">
             <h1 className="trail_search">Find a new trail to do:</h1>
-            <label htmlFor="text" className="search_words">Search by trail name, difficulty (easy, moderate or hard) or location: </label>
+            <label htmlFor="text" className="search_words">Search by trail name, features (vistas, forest, waterfalls, etc.) difficulty (easy, moderate or hard) or location: </label>
             <form>
             <input type="text" placeholder="Enter search terms here" id="search_field" onChange={this.searchHandler} value={term}/>
             </form>
@@ -54,7 +54,7 @@ class SearchList extends Component {
                     <div key={trail.id} className="card-content">
                         <h3 className="trail_name">{trail.name}</h3>
                         <p className="card_miles"><span>Length: </span>{trail.miles}</p>
-                        <p id="comments" className="card_item">{trail.description}</p>
+                        <p className="comments">{trail.description}</p>
                         <span className="trail_stats">{trail.difficulty} hike | {trail.feature} | {trail.elevationGain}ft. elevation gain | {trail.location}</span>
                         <p><span className="card_item">Trailhead on Google Maps: </span><a target="_blank" href={trail.trailhead}>Trailhead Location</a></p>
                         <a target="_blank" href={trail.link}>[More about this hike]</a>
