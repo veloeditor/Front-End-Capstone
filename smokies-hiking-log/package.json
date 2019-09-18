@@ -3,12 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@lottiefiles/lottie-player": "^0.2.0",
     "bootstrap": "^4.3.1",
     "react": "^16.9.0",
     "react-bootstrap-sweetalert": "^4.4.1",
     "react-chartjs-2": "^2.7.6",
     "react-circular-progressbar": "^2.0.2",
     "react-dom": "^16.9.0",
+    "react-modal": "^3.10.1",
     "react-router-dom": "^5.0.1",
     "react-scripts": "3.1.1",
     "reactstrap": "^8.0.1"
