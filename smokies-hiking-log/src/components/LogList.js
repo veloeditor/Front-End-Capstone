@@ -48,7 +48,10 @@ render(){
     <React.Fragment>
             <section className="hike-content">
                 <h1 className="hiking_log">{username.username}'s Hiking Log</h1>
-            <button id="add_a_hike" onClick={() => {this.props.history.push("/hikes/new")}}>Add a new hike</button>
+            <button id="add_a_hike" onClick={() => {
+                sessionStorage.setItem("currentTrailId", 0)
+                sessionStorage.setItem("currentTrailMiles", 0)
+                this.props.history.push("/hikes/new")}}>Add a new hike</button>
             <button id="back_to_dashboard" onClick={() => {this.props.history.push("/")}}>Back to Dashboard</button>
             </section>
             <div className="hike_container">

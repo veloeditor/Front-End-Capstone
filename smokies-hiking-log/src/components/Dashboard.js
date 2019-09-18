@@ -53,7 +53,6 @@ class Dashboard extends Component {
     }
 
 
-
   userGoalProgress = () => {
     const username = (JSON.parse(sessionStorage.getItem("credentials")))
     UserManager.get(username.id)
@@ -86,15 +85,21 @@ class Dashboard extends Component {
     HikesManager.getAll(username.id)
     .then((hikes) => this.setState({hikes}))
     .then(() => this.totalUserMiles())
-  
+    UserManager.get(username.id)
+      .then(users => {
+          this.setState({
+            userId: users.id,
+            goal: users.goal,
+          });
+      });
   }
 
   
 
   render() {
     const username = (JSON.parse(sessionStorage.getItem("credentials")))
-
     const percentage = this.state.goalPercentage;
+    const userGoal = this.state.goal
  
 
     return (
@@ -129,6 +134,7 @@ class Dashboard extends Component {
             trailColor: 'darkred',
         })}/>
             <br></br>
+            <p>Your goal is: <span className="userPerc">{userGoal}</span> miles</p>
             <button className="goal_change" onClick={() => {this.props.history.push("/goal")}}>Change your goal</button>
           </div>
         </div>

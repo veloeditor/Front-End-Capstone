@@ -77,8 +77,8 @@ body, html {
 }
 
 .dashTop_container p {
-  margin-bottom: 8px;
-  margin-top: 8px;
+  margin-bottom: 3px;
+  margin-top: 3px;
 }
 
 .trail-content {
@@ -318,7 +318,7 @@ p.card_miles {
 
 .progressBar {
   max-width: 70px;
-  padding-bottom: 13px;
+  padding-bottom: 8px;
 }
 
 .addHike_container .dash_bg_image {
@@ -361,6 +361,7 @@ p.card_miles {
   margin: 0px;
   text-align: center;
   margin-top: 68px;
+  letter-spacing: .4px;
 }
 
 .hike_log {
@@ -410,6 +411,10 @@ button {
               transform 150ms ease;
   -webkit-appearance: none;
   -moz-appearance: none;
+}
+
+.goal_change {
+  margin-top: 5px;
 }
 
 button:hover,

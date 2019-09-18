@@ -64,13 +64,32 @@ class NewHikeForm extends Component {
         TrailsManager.getAll()
         .then(trails => {
             this.setState({
-              name: trails.name,    
-              trailId: trails.id,
               loadingStatus: false,
               trails: trails,
             });
         });
+        const currentTrail = this.checkCurrentTrail()
+        const currentTrailMiles = this.checkCurrentTrailMiles()
+        this.setState({trailId: currentTrail, miles: currentTrailMiles})
       }
+
+    //function that looks at sessionstorage to grab trailId we want to add from the Trails Search page. Else returns 0 to allow a trail to be added from scratch.  
+      checkCurrentTrail = () => {
+          const currentTrail = sessionStorage.getItem("currentTrailId")
+            if (currentTrail) {
+                return currentTrail
+            }
+            return 0
+      }
+
+    //this grabs the trail miles from sessionstorage to use for the trail we want to add from the Trails Search page. Else returns 0 to allow a trail to be added from scratch.  
+      checkCurrentTrailMiles = () => {
+        const currentTrailMiles = sessionStorage.getItem("currentTrailMiles")
+          if (currentTrailMiles) {
+              return currentTrailMiles
+          }
+          return 0
+    }
 
     render(){
 
@@ -84,7 +103,7 @@ class NewHikeForm extends Component {
                          <select
                             className="form-control"
                             id="trailId"
-                            value={this.state.name}
+                            value={this.state.trailId}
                             onChange={this.handleTrailChange}
                             >
                             <option>Select Trail</option>
@@ -112,7 +131,7 @@ class NewHikeForm extends Component {
                         required
                         className="form-control"
                         onChange={this.handleFieldChange}
-                        id="comments_form"
+                        id="comments"
                         placeholder="Trail Comments"
                         />
                         

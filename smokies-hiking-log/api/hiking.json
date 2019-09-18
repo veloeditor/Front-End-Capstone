@@ -119,6 +119,30 @@
       "location": "Gatlinburg / Roaring Fork Motor Trail",
       "trailhead": "https://www.google.com/maps/search/?api=1&query=35.67582,-83.48527",
       "link": "http://www.hikinginthesmokys.com/bullhead.htm"
+    },
+    {
+      "id": 11,
+      "name": "Charlie's Bunion",
+      "miles": 8.1,
+      "description": "This is a classic hike on the Appalachian Trail to a very scenic rock outcropping with a wonderful view. You can combine this hike with the Jump Off for a 10+ mile day in the park. There is a good amount of climbing experienced on this hike so it is generally considered to be a strenuous hike. Trail leaves from the Newfound Gap parking lot.",
+      "difficulty": "hard",
+      "feature": "vistas",
+      "elevationGain": 1640,
+      "location": "Newfound Gap",
+      "trailhead": "https://www.google.com/maps/search/?api=1&query=35.61084,-83.42509",
+      "link": "http://www.hikinginthesmokys.com/charliesbunion.htm"
+    },
+    {
+      "id": 12,
+      "name": "Chasteen Creek Cascade",
+      "miles": 3.6,
+      "description": "This is an easy hike from the Smokemont area of the park. This is a good hike for wildflowers and opportunities to play in the creek. The namesake of the hike is a 30-foot high waterfall cascade.",
+      "difficulty": "easy",
+      "feature": "waterfall, streams",
+      "elevationGain": 340,
+      "location": "Cherokee / Deep Creek",
+      "trailhead": "https://www.google.com/maps/search/?api=1&query=35.56307,-83.31062",
+      "link": "http://www.hikinginthesmokys.com/chasteen-creek-cascade.htm"
     }
   ],
   "users": [
@@ -126,7 +150,7 @@
       "id": 1,
       "username": "BrianW",
       "password": "b",
-      "goal": 100,
+      "goal": 75,
       "completedMiles": 3
     },
     {
@@ -208,16 +232,26 @@
       "date": "2019-09-24",
       "miles": 11.1,
       "trailId": 8,
-      "comments": "Beautiful view from an old firetower lookout tower at the top.",
+      "comments": "Beautiful view from an old fire tower lookout tower at the top.",
       "id": 7
     },
     {
+      "name": "",
       "userId": 1,
-      "date": "2019-09-09",
-      "miles": 3,
-      "trailId": 7,
-      "comments": "",
+      "date": "2019-09-22",
+      "miles": 3.5,
+      "trailId": 4,
+      "comments": "Beautiful hike up to Andrews Bald. Great view.",
       "id": 8
+    },
+    {
+      "name": "",
+      "userId": 1,
+      "date": "2019-01-16",
+      "miles": 3.6,
+      "trailId": 12,
+      "comments": "Beautiful hike along a creek to a nice waterfall. Pretty flowers.",
+      "id": 9
     }
   ]
 }
