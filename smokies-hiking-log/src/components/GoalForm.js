@@ -3,53 +3,53 @@ import UserManager from "../modules/UserManager"
 // import "./OwnerForm.css"
 
 class HikeEditForm extends Component {
-    //set the initial state
-    state = {
-       goal: 0,
-       userId: 0,
-    };
+  //set the initial state
+  state = {
+    goal: 0,
+    userId: 0,
+  };
 
-    handleFieldChange = evt => {
-      const stateToChange = {}
-      stateToChange[evt.target.id] = evt.target.value
-      this.setState(stateToChange)
-    }
-
-    handleCancel = (event) => {
-      event.preventDefault()
-      this.props.history.push("/");
+  handleFieldChange = evt => {
+    const stateToChange = {}
+    stateToChange[evt.target.id] = evt.target.value
+    this.setState(stateToChange)
   }
 
-    updateExistingGoal = evt => {
-      evt.preventDefault()
-      this.setState({ loadingStatus: true });
-      const editedGoal = {
-        goal: parseInt(this.state.goal)
-      };
-      console.log("edited goal", editedGoal)
-      UserManager.update(this.state.userId, editedGoal)
+  handleCancel = (event) => {
+    event.preventDefault()
+    this.props.history.push("/");
+  }
+
+  updateExistingGoal = evt => {
+    evt.preventDefault()
+    this.setState({ loadingStatus: true });
+    const editedGoal = {
+      goal: parseInt(this.state.goal)
+    };
+    console.log("edited goal", editedGoal)
+    UserManager.update(this.state.userId, editedGoal)
       .then(() => this.props.history.push("/"))
-    }
+  }
 
-    componentDidMount() {
-      const username = (JSON.parse(sessionStorage.getItem("credentials")))
-      UserManager.get(username.id)
+  componentDidMount() {
+    const username = (JSON.parse(sessionStorage.getItem("credentials")))
+    UserManager.get(username.id)
       .then(users => {
-          console.log(users)
-          this.setState({
-            userId: users.id,
-            goal: users.goal,
-          });
+        console.log(users)
+        this.setState({
+          userId: users.id,
+          goal: users.goal,
+        });
       });
-    }
+  }
 
 
-    render() {
-      return (
-        <>
+  render() {
+    return (
+      <>
         <div className="goal_edit_container">
-        <h3 className="goal_h3">Enter a new goal:</h3>
-        <form>
+          <h3 className="goal_h3">Enter a new goal:</h3>
+          <form>
             <div className="formgrid">
               <label htmlFor="goal">Your new goal: </label>
               <br></br>
@@ -63,21 +63,21 @@ class HikeEditForm extends Component {
               />
             </div>
             <div className="alignRight">
-            <button
+              <button
                 type="button" disabled={this.state.loadingStatus}
                 onClick={this.updateExistingGoal}
                 className=""
               >Submit</button>
-               <button type="cancel" onClick={this.handleCancel}>
-                        Cancel
+              <button type="cancel" onClick={this.handleCancel}>
+                Cancel
             </button>
             </div>
-          
-        </form>
+
+          </form>
         </div>
-        </>
-      );
-    }
+      </>
+    );
+  }
 }
 
 export default HikeEditForm

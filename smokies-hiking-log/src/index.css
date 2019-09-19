@@ -21,6 +21,18 @@ body, html {
 
   .logo {
     max-width: 320px;
+
+  }
+
+  .edit_hike {
+    font-size: 1.3em;
+    margin-bottom: 6px;
+  }
+
+  .trail_pictures {
+    max-width: 360px;
+    border: 3px solid rgb(56, 4, 4);
+    /* box-shadow: 1px 1px 8px rgb(41, 40, 40); */
   }
 
   .header_img {
@@ -261,6 +273,10 @@ p.card_miles {
 .hike__name, .trail_name {
   margin-bottom: 3px;
   font-size: 1.4em;
+}
+
+.trail_name {
+  margin-top: 12px;
 }
 
 .card__buttons {
