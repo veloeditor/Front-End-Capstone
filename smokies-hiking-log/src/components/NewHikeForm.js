@@ -22,7 +22,7 @@ class NewHikeForm extends Component {
     //function that determines what happens when user selects something but also reads the miles for that trail and uses that number for hike miles.
     handleTrailChange = evt => {
         const stateToChange = {};
-        const trailMiles = this.state.trails.filter((trail) => trail.id == evt.target.value)[0].miles
+        const trailMiles = this.state.trails.filter((trail) => trail.id === parseInt(evt.target.value))[0].miles
         console.log(trailMiles)
         stateToChange[evt.target.id] = evt.target.value;
         stateToChange["miles"] = trailMiles
@@ -43,18 +43,18 @@ class NewHikeForm extends Component {
         // if (this.state.name === "" || this.state.length === "") {
         //     window.alert("Please select a trail");
         // } else {
-            this.setState({ loadingStatus: true });
-            const trail = {
-                name: this.state.name,
-                userId: parseInt(username.id),
-                date: this.state.date,
-                miles: parseFloat(this.state.miles),
-                trailId: parseInt(this.state.trailId),
-                comments: this.state.comments
-            };
+        this.setState({ loadingStatus: true });
+        const trail = {
+            name: this.state.name,
+            userId: parseInt(username.id),
+            date: this.state.date,
+            miles: parseFloat(this.state.miles),
+            trailId: parseInt(this.state.trailId),
+            comments: this.state.comments
+        };
 
-            // Create the trail and redirect user to trail list
-            HikesManager.post(trail)
+        // Create the trail and redirect user to trail list
+        HikesManager.post(trail)
             .then(() => this.props.history.push("/hikes"));
         // }
     };
@@ -62,94 +62,94 @@ class NewHikeForm extends Component {
     componentDidMount() {
         HikesManager.getAll()
         TrailsManager.getAll()
-        .then(trails => {
-            this.setState({
-              loadingStatus: false,
-              trails: trails,
+            .then(trails => {
+                this.setState({
+                    loadingStatus: false,
+                    trails: trails,
+                });
             });
-        });
         const currentTrail = this.checkCurrentTrail()
         const currentTrailMiles = this.checkCurrentTrailMiles()
-        this.setState({trailId: currentTrail, miles: currentTrailMiles})
-      }
-
-    //function that looks at sessionstorage to grab trailId we want to add from the Trails Search page. Else returns 0 to allow a trail to be added from scratch.  
-      checkCurrentTrail = () => {
-          const currentTrail = sessionStorage.getItem("currentTrailId")
-            if (currentTrail) {
-                return currentTrail
-            }
-            return 0
-      }
-
-    //this grabs the trail miles from sessionstorage to use for the trail we want to add from the Trails Search page. Else returns 0 to allow a trail to be added from scratch.  
-      checkCurrentTrailMiles = () => {
-        const currentTrailMiles = sessionStorage.getItem("currentTrailMiles")
-          if (currentTrailMiles) {
-              return currentTrailMiles
-          }
-          return 0
+        this.setState({ trailId: currentTrail, miles: currentTrailMiles })
     }
 
-    render(){
+    //function that looks at sessionstorage to grab trailId we want to add from the Trails Search page. Else returns 0 to allow a trail to be added from scratch.  
+    checkCurrentTrail = () => {
+        const currentTrail = sessionStorage.getItem("currentTrailId")
+        if (currentTrail) {
+            return currentTrail
+        }
+        return 0
+    }
 
-        return(
+    //this grabs the trail miles from sessionstorage to use for the trail we want to add from the Trails Search page. Else returns 0 to allow a trail to be added from scratch.  
+    checkCurrentTrailMiles = () => {
+        const currentTrailMiles = sessionStorage.getItem("currentTrailMiles")
+        if (currentTrailMiles) {
+            return currentTrailMiles
+        }
+        return 0
+    }
+
+    render() {
+
+        return (
             <>
-            <div className="add_hike_container">
-            <form>
-                <h3 className="add_hike_h3">Add a Hike:</h3>
-                    <div className="formgrid">
-                    <label htmlFor="name">Trail Name: </label>
-                         <select
-                            className="form-control"
-                            id="trailId"
-                            value={this.state.trailId}
-                            onChange={this.handleTrailChange}
+                <div className="add_hike_container">
+                    <form>
+                        <h3 className="add_hike_h3">Add a Hike:</h3>
+                        <div className="formgrid">
+                            <label htmlFor="name">Trail Name: </label>
+                            <select
+                                className="form-control"
+                                id="trailId"
+                                value={this.state.trailId}
+                                onChange={this.handleTrailChange}
                             >
-                            <option>Select Trail</option>
-                            {this.state.trails.map(trail =>
-                                <option key={trail.id} value={trail.id}>
-                                {trail.name}
-                                </option>
-                            )}
-                        </select>
-                        <br></br>
-                        <label htmlFor="date"> Date of Hike: </label>
-                        <input
-                        type="date"
-                        required
-                        className="form-control"
-                        onChange={this.handleFieldChange}
-                        id="date"
-                        placeholder="date"
-                        />
-                        <br></br>
-                        <label htmlFor="comments"> Comments: </label>
-                        <input
-                        type="text"
-                       
-                        required
-                        className="form-control"
-                        onChange={this.handleFieldChange}
-                        id="comments"
-                        placeholder="Trail Comments"
-                        />
-                        
-                    </div>
-                    <div className="form_buttons">
-                        <button
-                        type="button"
-                        className="submit"
-                        disabled={this.state.loadingStatus}
-                        onClick={this.constructNewHike}
-                        >Submit</button>
+                                <option>Select Trail</option>
+                                {this.state.trails.map(trail =>
+                                    <option key={trail.id} value={trail.id}>
+                                        {trail.name}
+                                    </option>
+                                )}
+                            </select>
+                            <br></br>
+                            <label htmlFor="date"> Date of Hike: </label>
+                            <input
+                                type="date"
+                                required
+                                className="form-control"
+                                onChange={this.handleFieldChange}
+                                id="date"
+                                placeholder="date"
+                            />
+                            <br></br>
+                            <label htmlFor="comments"> Comments: </label>
+                            <input
+                                type="text"
 
-                        <button onClick={() => this.props.history.goBack()}>Back</button>
-                    </div>
-                   
-                </form>
-            </div>
-        </>
+                                required
+                                className="form-control"
+                                onChange={this.handleFieldChange}
+                                id="comments"
+                                placeholder="Trail Comments"
+                            />
+
+                        </div>
+                        <div className="form_buttons">
+                            <button
+                                type="button"
+                                className="submit"
+                                disabled={this.state.loadingStatus}
+                                onClick={this.constructNewHike}
+                            >Submit</button>
+
+                            <button onClick={() => this.props.history.goBack()}>Back</button>
+                        </div>
+
+                    </form>
+                </div>
+            </>
         )
     }
 }
