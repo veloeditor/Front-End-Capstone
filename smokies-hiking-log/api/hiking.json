@@ -175,7 +175,7 @@
       "id": 1,
       "username": "BrianW",
       "password": "b",
-      "goal": 75,
+      "goal": 100,
       "completedMiles": 3
     },
     {
@@ -209,30 +209,12 @@
   ],
   "hikes": [
     {
-      "id": 2,
-      "name": "Abrams Falls Trail",
-      "miles": 4,
-      "date": "2019-09-23",
-      "userId": 2,
-      "trailId": 1,
-      "comments": "Beautiful!"
-    },
-    {
-      "name": "Mt. Cammerer",
-      "userId": 1,
-      "date": "2019-09-24",
-      "miles": 12.2,
-      "trailId": 8,
-      "comments": "Beautiful hike with a long demanding climb. The fire tower was cool with a 360 degree great view.",
-      "id": 3
-    },
-    {
       "name": "",
       "userId": 1,
-      "date": "2019-09-22",
+      "date": "2019-09-01",
       "miles": 6.7,
       "trailId": 2,
-      "comments": "This is a beautiful hike up to Mt. Leconte to see this rock outcropping.",
+      "comments": "This is a beautiful hike up to a rock outcropping.",
       "id": 5
     },
     {
@@ -252,6 +234,51 @@
       "trailId": 5,
       "comments": "Really cool cabin to explore in the park and a reminder of the history before this place became a national park.",
       "id": 7
+    },
+    {
+      "name": "",
+      "userId": 1,
+      "date": "2019-09-16",
+      "miles": 3.5,
+      "trailId": 4,
+      "comments": "Great view from the top!",
+      "id": 8
+    },
+    {
+      "name": "",
+      "userId": 2,
+      "date": "2019-09-15",
+      "miles": 5.9,
+      "trailId": 10,
+      "comments": "Great! Awesome~",
+      "id": 9
+    },
+    {
+      "name": "",
+      "userId": 1,
+      "date": "2019-09-16",
+      "miles": 6.8,
+      "trailId": 9,
+      "comments": "it was cool!",
+      "id": 10
+    },
+    {
+      "name": "",
+      "userId": 1,
+      "date": "2019-09-22",
+      "miles": 2,
+      "trailId": 5,
+      "comments": "Great short hike to see some of the history in this area before it became a park.",
+      "id": 11
+    },
+    {
+      "name": "",
+      "userId": 1,
+      "date": "2019-09-30",
+      "miles": 7.6,
+      "trailId": 6,
+      "comments": "Very long hike without much of a view. It was okay for the exercise.",
+      "id": 12
     }
   ]
 }
