@@ -5,7 +5,7 @@ export default {
         return fetch(`${remoteURL}/hikes/${id}?_expand=trail`).then(result => result.json())
       },
       getAll() {
-        return fetch(`${remoteURL}/hikes?_expand=trail`).then(result => result.json())
+        return fetch(`${remoteURL}/hikes?_expand=trail&_sort=id&_order=desc`).then(result => result.json())
       },
       delete(id) {
       return fetch(`${remoteURL}/hikes/${id}`, {

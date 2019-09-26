@@ -1,5 +1,6 @@
 import React, { Component } from "react"
 import TrailsManager from '../modules/TrailsManager'
+import {CircleArrow as ScrollUpButton} from "react-scroll-up-button";
 
 //search function that returns the fields which the filter will work - name, difficulty and location
 const searchingFor = (term) => {
@@ -42,9 +43,9 @@ class SearchList extends Component {
       <>
         <section className="trail-content">
           <h1 className="trail_search">Find a new trail to do:</h1>
-          <label htmlFor="text" className="search_words">Search by trail name, features (vistas, forest, waterfalls, etc.) difficulty (easy, moderate or hard) or location: </label>
+          <p className="search_words">Search by trail name, features (vistas, forest, waterfalls, etc.) difficulty (easy, moderate or hard) or location. Results will appear below. Be sure to download the official park <a target="_blank" rel="noopener noreferrer" href="https://www.nps.gov/grsm/planyourvisit/upload/GSMNP-Map_JUNE14-complete4-2.pdf">trail map</a> to take along on your journey.</p>
           <form>
-            <input type="text" placeholder="Enter search terms here" id="search_field" onChange={this.searchHandler} />
+            <input type="text" className="search_box" placeholder="Enter search terms here, results appear automatically" id="search_field" onChange={this.searchHandler} />
           </form>
           <button className="back_to_dashboard" onClick={() => { this.props.history.push("/") }}>Back to Dashboard</button>
         </section>
@@ -70,7 +71,7 @@ class SearchList extends Component {
             </div>
           )}
         </div>
-
+        <footer><ScrollUpButton  /></footer>
       </>
     );
   }
