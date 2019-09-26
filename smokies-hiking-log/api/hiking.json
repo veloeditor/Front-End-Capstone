@@ -41,7 +41,7 @@
     },
     {
       "id": 4,
-      "name": "Forney Ridge Trail/Andrews Bald Hike",
+      "name": "Andrews Bald Hike",
       "miles": 3.5,
       "description": "This a relatively short, though moderate hike to Andrews Bald. Access from the Clingmons Dome parking area. This is a crowded area, but the moderate difficulty of the hike means less crowds on this trail. ",
       "difficulty": "moderate",
@@ -93,33 +93,7 @@
     },
     {
       "id": 8,
-      "name": "Mt. Cammerer Hike",
-      "miles": 11.1,
-      "description": "This is a very challenging hike up to the top of Mt. Cammerer where you can see a commanding view of the surrounding mountains from an old fire lookout tower. This particular hike uses the Low Gap Trail from the Cosby area of the park. The hike up to the Appalachian Trail is demanding.",
-      "difficulty": "hard",
-      "feature": "vistas",
-      "elevationGain": 3045,
-      "location": "Cosby",
-      "trailhead": "https://www.google.com/maps/search/?api=1&query=35.75595,-83.20765",
-      "link": "http://www.hikinginthesmokys.com/cammerer.htm",
-      "photo": "https://cdn-files.apstatic.com/hike/7014429_medium_1554824285.jpg"
-    },
-    {
-      "id": 9,
-      "name": "The Jump Off Hike",
-      "miles": 6.5,
-      "description": "This hike involves catching the Appalachian Trail from the Newfound Gap parking lot. Most of the hike is along this famous trail until you reach the Jump Off spur trail. At the Jump Off you'll have an amazing view. ",
-      "difficulty": "moderate",
-      "feature": "vistas",
-      "elevationGain": 1275,
-      "location": "Newfound Gap",
-      "trailhead": "https://www.google.com/maps/search/?api=1&query=35.61084,-83.42509",
-      "link": "http://www.hikinginthesmokys.com/jumpoff.htm",
-      "photo": "https://cdn-files.apstatic.com/hike/7011319_medium_1554400402.jpg"
-    },
-    {
-      "id": 10,
-      "name": "William's Pulpit Hike",
+      "name": "Bullhead Trail to William's Pulpit",
       "miles": 5.9,
       "description": "This involves hiking the Bullhead trail. Start this hike from the Rainbow Falls trailhead parking lot. This trail was closed for a few years due to the wildfire that struck the area in late 2016. This trail can be used to reach the top of Mt. Leconte but this particular hike is most famous for reaching 'The Pulpit', a large rock cairn built by the CCC in the 1930s.",
       "difficulty": "moderate",
@@ -131,7 +105,7 @@
       "photo": "https://cdn-files.apstatic.com/hike/7046006_medium_1555533760.jpg"
     },
     {
-      "id": 11,
+      "id": 9,
       "name": "Charlie's Bunion Hike",
       "miles": 8.1,
       "description": "This is a classic hike on the Appalachian Trail to a very scenic rock outcropping with a wonderful view. You can combine this hike with the Jump Off for a 10+ mile day in the park. There is a good amount of climbing experienced on this hike so it is generally considered to be a strenuous hike. Trail leaves from the Newfound Gap parking lot.",
@@ -144,7 +118,7 @@
       "photo": "https://cdn-files.apstatic.com/hike/7011319_medium_1554400402.jpg"
     },
     {
-      "id": 12,
+      "id": 10,
       "name": "Chasteen Creek Cascade Hike",
       "miles": 3.6,
       "description": "This is an easy hike from the Smokemont area of the park. This is a good hike for wildflowers and opportunities to play in the creek. The namesake of the hike is a 30-foot high waterfall cascade. You will use the Bradley Fork Trail to reach the Chasteen Creek Trail.",
@@ -154,10 +128,75 @@
       "location": "Cherokee / Deep Creek",
       "trailhead": "https://www.google.com/maps/search/?api=1&query=35.56307,-83.31062",
       "link": "http://www.hikinginthesmokys.com/chasteen-creek-cascade.htm",
-      "photo": "https://cdn-files.apstatic.com/hike/7006223_medium_1554320273.jpg"
+      "photo": "https://cdn-files.apstatic.com/hike/7006906_medium_1554321735.jpg"
+    },
+    {
+      "id": 11,
+      "name": "Chimney Tops Trail",
+      "miles": 3.3,
+      "description": "One of the park's most iconic trails, the Chimney Top trail is a must do for anyone visiting the park and who is up for more than an easy hike. Unfortunately, a devastating wildfire struck the park in late 2017 and it's origin was the Chimney Tops. The trail was closed for a number of years as result and only recently opened to what it is today. You can no longer hike to the top of the Chimney Tops, but instead you hike up to a newly created observation point.",
+      "difficulty": "moderate",
+      "feature": "vistas, streams",
+      "elevationGain": 783,
+      "location": "Newfound Gap",
+      "trailhead": "https://www.google.com/maps/search/?api=1&query=35.63538,-83.46979",
+      "link": "http://www.hikinginthesmokys.com/chimney.htm",
+      "photo": "https://cdn-files.apstatic.com/hike/7009715_medium_1554397032.jpg"
+    },
+    {
+      "id": 12,
+      "name": "Deep Creek Loop",
+      "miles": 4.6,
+      "description": "This is a popular moderate hike from the North Carolina side of the park. You'll follow Deep Creek and visit a number of waterfalls along the way. This trail is noted for being one of the first tails constructed by the CCC in the park.",
+      "difficulty": "moderate",
+      "feature": "waterfall, streams",
+      "elevationGain": 579,
+      "location": "Deep Creek",
+      "trailhead": "https://www.google.com/maps/search/?api=1&query=35.4643,-83.4342",
+      "link": "http://www.hikinginthesmokys.com/deepcreek.htm",
+      "photo": "https://cdn-files.apstatic.com/hike/7006914_medium_1554321753.jpg"
     },
     {
       "id": 13,
+      "name": "Grotto Falls",
+      "miles": 2.6,
+      "description": "This is a very popular waterfall hike and because of it's relatively easy nature, it's a must-do for many people visiting Gatlinburg and the park. Parking can be very difficult, so get there early. The hike not only takes you to the nameksake waterfall, but you also get to walk through an old growth forest.",
+      "difficulty": "easy",
+      "feature": "waterfall, forests",
+      "elevationGain": 585,
+      "location": "Roaring Fork Motor Trail",
+      "trailhead": "https://www.google.com/maps/search/?api=1&query=35.68037,-83.46243",
+      "link": "http://www.hikinginthesmokys.com/grotto.htm",
+      "photo": "https://cdn-files.apstatic.com/hike/7014920_medium_1554825556.jpg"
+    },
+    {
+      "id": 14,
+      "name": "Mt. Cammerer Hike",
+      "miles": 11.1,
+      "description": "This is a very challenging hike up to the top of Mt. Cammerer where you can see a commanding view of the surrounding mountains from an old fire lookout tower. This particular hike uses the Low Gap Trail from the Cosby area of the park. The hike up to the Appalachian Trail is demanding.",
+      "difficulty": "hard",
+      "feature": "vistas",
+      "elevationGain": 3045,
+      "location": "Cosby",
+      "trailhead": "https://www.google.com/maps/search/?api=1&query=35.75595,-83.20765",
+      "link": "http://www.hikinginthesmokys.com/cammerer.htm",
+      "photo": "https://cdn-files.apstatic.com/hike/7014429_medium_1554824285.jpg"
+    },
+    {
+      "id": 15,
+      "name": "The Jump Off Hike",
+      "miles": 6.5,
+      "description": "This hike involves catching the Appalachian Trail from the Newfound Gap parking lot. Most of the hike is along this famous trail until you reach the Jump Off spur trail. At the Jump Off you'll have an amazing view. ",
+      "difficulty": "moderate",
+      "feature": "vistas",
+      "elevationGain": 1275,
+      "location": "Newfound Gap",
+      "trailhead": "https://www.google.com/maps/search/?api=1&query=35.61084,-83.42509",
+      "link": "http://www.hikinginthesmokys.com/jumpoff.htm",
+      "photo": "http://res.cloudinary.com/djxd2b2en/image/upload/v1569511051/jumpoff_zdnrsz.jpg"
+    },
+    {
+      "id": 16,
       "name": "Laurel Falls Trail",
       "miles": 2.3,
       "description": "The Laurel Falls hike is a classic, easy paved trail to a waterfall. This is a very popular hike, so it will be crowded and parking can be an issue. Best bet is to go as early as you can to find a parking spot and experience the falls with as few people as possible.",
@@ -168,6 +207,45 @@
       "trailhead": "https://www.google.com/maps/search/?api=1&query=35.67208,-83.58068",
       "link": "http://www.hikinginthesmokys.com/laurel.htm",
       "photo": "https://cdn-files.apstatic.com/hike/7014931_medium_1554825575.jpg"
+    },
+    {
+      "id": 17,
+      "name": "Mt. Leconte - Rainbow Falls Trail",
+      "miles": 13.8,
+      "description": "Mt. Leconte is one of the classic destinations in the park and can only be reached by one of several difficult trails. Accessing the top via the Rainbow Falls trail is one of the most popular ways and includes a stop at beautiful Rainbow Falls. This is a tough hike, so be warned. Could also combine this with the Alum Bluff trail and do a through-trip, but be sure to stash a second vehicle at the Alum Bluff trail parking lot or arrange for transportation",
+      "difficulty": "hard",
+      "feature": "waterfall, vistas",
+      "elevationGain": 3993,
+      "location": "Gatlinburg",
+      "trailhead": "https://www.google.com/maps/search/?api=1&query=35.67582,-83.48527",
+      "link": "http://www.hikinginthesmokys.com/leconterainbow.htm",
+      "photo": "https://cdn-files.apstatic.com/hike/7014486_medium_1554824360.jpg"
+    },
+    {
+      "id": 18,
+      "name": "Mt. Sterling Gap Hike",
+      "miles": 5.6,
+      "description": "This is the quickest and more moderate way up to the fire tower on top of Mt. Sterling. Enjoy scenic panoramic views from the top. Located in the Big Creek section of the park which isn't nearly as crowded as the main section of the park",
+      "difficulty": "moderate",
+      "feature": "vistas",
+      "elevationGain": 714,
+      "location": "Big Creek",
+      "trailhead": "https://www.google.com/maps/search/?api=1&query=35.70022,-83.09746",
+      "link": "http://www.hikinginthesmokys.com/mountsterling.htm",
+      "photo": "https://cdn-files.apstatic.com/hike/7006223_medium_1554320273.jpg"
+    },
+    {
+      "id": 19,
+      "name": "Ramsey Cascades",
+      "miles": 8.0,
+      "description": "A beautiful, but difficult, hike up to Ramsey Cascades waterfall. The trail is often rocky and extremely rugged, so be prepared not only for the elevation gain but also uneven footing. Enjoy a relaxing dip in the river before heading back to the car.",
+      "difficulty": "hard",
+      "feature": "waterfalls",
+      "elevationGain": 2190,
+      "location": "Greenbrier",
+      "trailhead": "https://www.google.com/maps/search/?api=1&query=35.70267,-83.35764",
+      "link": "http://www.hikinginthesmokys.com/ramsay.htm",
+      "photo": "https://cdn-files.apstatic.com/hike/7010250_medium_1554398123.jpg"
     }
   ],
   "users": [
@@ -210,75 +288,12 @@
   "hikes": [
     {
       "name": "",
-      "userId": 1,
-      "date": "2019-09-01",
-      "miles": 6.7,
-      "trailId": 2,
-      "comments": "This is a beautiful hike up to a rock outcropping.",
-      "id": 5
-    },
-    {
-      "name": "",
-      "userId": 1,
-      "date": "2019-09-29",
-      "miles": 3.6,
-      "trailId": 12,
-      "comments": "Pretty hike. Nice wildflowers and a high water levels.",
-      "id": 6
-    },
-    {
-      "name": "",
-      "userId": 1,
-      "date": "2019-09-30",
-      "miles": 2.1,
-      "trailId": 5,
-      "comments": "Really cool cabin to explore in the park and a reminder of the history before this place became a national park.",
-      "id": 7
-    },
-    {
-      "name": "",
-      "userId": 1,
-      "date": "2019-09-16",
-      "miles": 3.5,
-      "trailId": 4,
-      "comments": "Great view from the top!",
-      "id": 8
-    },
-    {
-      "name": "",
       "userId": 2,
       "date": "2019-09-15",
       "miles": 5.9,
       "trailId": 10,
       "comments": "Great! Awesome~",
       "id": 9
-    },
-    {
-      "name": "",
-      "userId": 1,
-      "date": "2019-09-16",
-      "miles": 6.8,
-      "trailId": 9,
-      "comments": "it was cool!",
-      "id": 10
-    },
-    {
-      "name": "",
-      "userId": 1,
-      "date": "2019-09-22",
-      "miles": 2,
-      "trailId": 5,
-      "comments": "Great short hike to see some of the history in this area before it became a park.",
-      "id": 11
-    },
-    {
-      "name": "",
-      "userId": 1,
-      "date": "2019-09-30",
-      "miles": 7.6,
-      "trailId": 6,
-      "comments": "Very long hike without much of a view. It was okay for the exercise.",
-      "id": 12
     }
   ]
 }

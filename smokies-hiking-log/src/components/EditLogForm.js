@@ -7,9 +7,7 @@ class HikeEditForm extends Component {
   //set the initial state
   state = {
     name: "",
-    date: "",
     miles: 0,
-    comments: "",
     trail: {},
     trailId: 0,
     loadingStatus: true,
@@ -47,7 +45,6 @@ class HikeEditForm extends Component {
     HikesManager.get(this.props.match.params.hikeId)
       .then(hike => {
         this.setState({
-          name: hike.name,
           miles: parseFloat(hike.miles),
           date: hike.date,
           loadingStatus: false,
@@ -88,7 +85,7 @@ class HikeEditForm extends Component {
                 className="form-control"
                 onChange={this.handleFieldChange}
                 id="date"
-                value={this.state.date}
+                defaultValue={this.state.date}
               />
               <br></br>
               <label htmlFor="comments">Comments: </label>
@@ -100,7 +97,7 @@ class HikeEditForm extends Component {
                 id="comments"
                 size="40"
 
-                value={this.state.comments}
+                defaultValue={this.state.comments}
               />
             </div>
             <div className="form_buttons">

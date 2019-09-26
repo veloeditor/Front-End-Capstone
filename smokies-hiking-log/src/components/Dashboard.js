@@ -114,7 +114,7 @@ class Dashboard extends Component {
                       className="Modal"
                   >
                     <span><Link to={"/"}><img className="checkmark" src={ require('./img/checkbox.png')} alt="checkmark"/></Link></span>
-                      <h2 className="goal_congrats">Congratulations, you SMASHED your goal!</h2>
+                      <h2 className="goal_congrats">Awesome! You SMASHED your goal!</h2>
                       <p> Set a new goal:</p>
                       <button
                           type="button"
