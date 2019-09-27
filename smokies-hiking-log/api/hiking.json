@@ -56,14 +56,14 @@
       "id": 5,
       "name": "Avent Cabin Hike",
       "miles": 2,
-      "description": "Park at the Jakes Creek Trailhead in the ELkmont area of the park. This is a relatively short hike to an old historical cabin structure. The Elkmont area was a popular vacation resort prior to the area becoming a national park.",
+      "description": "Park at the Jakes Creek Trailhead in the Elkmont area of the park. This is a relatively short hike to an old historical cabin structure. The Elkmont area was a popular vacation resort prior to the area becoming a national park. Photo by Brian Stansberry, Wikimedia Commons.",
       "difficulty": "easy",
       "feature": "history",
       "elevationGain": 505,
       "location": "Elkmont",
       "trailhead": "https://www.google.com/maps/search/?api=1&query=35.64764,-83.5832",
       "link": "http://www.hikinginthesmokys.com/avent-cabin.htm",
-      "photo": "https://cdn-files.apstatic.com/hike/7024241_medium_1554846555.jpg"
+      "photo": "https://res.cloudinary.com/djxd2b2en/image/upload/v1569538931/Aventcabin2_croyvg.jpg"
     },
     {
       "id": 6,
@@ -183,19 +183,6 @@
       "photo": "https://cdn-files.apstatic.com/hike/7014429_medium_1554824285.jpg"
     },
     {
-      "id": 15,
-      "name": "The Jump Off Hike",
-      "miles": 6.5,
-      "description": "This hike involves catching the Appalachian Trail from the Newfound Gap parking lot. Most of the hike is along this famous trail until you reach the Jump Off spur trail. At the Jump Off you'll have an amazing view. ",
-      "difficulty": "moderate",
-      "feature": "vistas",
-      "elevationGain": 1275,
-      "location": "Newfound Gap",
-      "trailhead": "https://www.google.com/maps/search/?api=1&query=35.61084,-83.42509",
-      "link": "http://www.hikinginthesmokys.com/jumpoff.htm",
-      "photo": "http://res.cloudinary.com/djxd2b2en/image/upload/v1569511051/jumpoff_zdnrsz.jpg"
-    },
-    {
       "id": 16,
       "name": "Laurel Falls Trail",
       "miles": 2.3,
@@ -236,8 +223,21 @@
     },
     {
       "id": 19,
+      "name": "Porters Creek Trail",
+      "miles": 4,
+      "description": "A nice option in the Greenbrier section of the park. You will follow Porters Creek for the first part of this hike and also get to explore an old farm site. The John Messer farm is one of a number of historical structures reamining in the park. This is also a great trail for wildflowers in the spring.",
+      "difficulty": "moderate",
+      "feature": "waterfall, history, streams",
+      "elevationGain": 699,
+      "location": "Greenbrier",
+      "trailhead": "https://www.google.com/maps/search/?api=1&query=35.69696,-83.38773",
+      "link": "http://www.hikinginthesmokys.com/porters.htm",
+      "photo": "https://cdn-files.apstatic.com/hike/7011688_medium_1554559846.jpg"
+    },
+    {
+      "id": 20,
       "name": "Ramsey Cascades",
-      "miles": 8.0,
+      "miles": 8,
       "description": "A beautiful, but difficult, hike up to Ramsey Cascades waterfall. The trail is often rocky and extremely rugged, so be prepared not only for the elevation gain but also uneven footing. Enjoy a relaxing dip in the river before heading back to the car.",
       "difficulty": "hard",
       "feature": "waterfalls",
@@ -246,6 +246,19 @@
       "trailhead": "https://www.google.com/maps/search/?api=1&query=35.70267,-83.35764",
       "link": "http://www.hikinginthesmokys.com/ramsay.htm",
       "photo": "https://cdn-files.apstatic.com/hike/7010250_medium_1554398123.jpg"
+    },
+    {
+      "id": 21,
+      "name": "The Jump Off Hike",
+      "miles": 6.5,
+      "description": "This hike involves catching the Appalachian Trail from the Newfound Gap parking lot. Most of the hike is along this famous trail until you reach the Jump Off spur trail. At the Jump Off you'll have an amazing view. ",
+      "difficulty": "moderate",
+      "feature": "vistas",
+      "elevationGain": 1275,
+      "location": "Newfound Gap",
+      "trailhead": "https://www.google.com/maps/search/?api=1&query=35.61084,-83.42509",
+      "link": "http://www.hikinginthesmokys.com/jumpoff.htm",
+      "photo": "http://res.cloudinary.com/djxd2b2en/image/upload/v1569511051/jumpoff_zdnrsz.jpg"
     }
   ],
   "users": [
@@ -253,7 +266,7 @@
       "id": 1,
       "username": "BrianW",
       "password": "b",
-      "goal": 100,
+      "goal": 50,
       "completedMiles": 3
     },
     {
@@ -294,6 +307,33 @@
       "trailId": 10,
       "comments": "Great! Awesome~",
       "id": 9
+    },
+    {
+      "name": "",
+      "userId": 1,
+      "date": "2019-07-07",
+      "miles": 2.3,
+      "trailId": 16,
+      "comments": "Water levels were high this day so the waterfall was full and flowing fast. Unfortunately the trail was also extremely crowded, but this is one of the most popular trails in the park so go figure.",
+      "id": 10
+    },
+    {
+      "name": "",
+      "userId": 1,
+      "date": "2019-08-11",
+      "miles": 11.1,
+      "trailId": 14,
+      "comments": "Brutal hike! The climb up to Low Gap is relentless but the view from the top is amazing!  Great 360 view!!",
+      "id": 11
+    },
+    {
+      "name": "",
+      "userId": 1,
+      "date": "2019-09-07",
+      "miles": 5.9,
+      "trailId": 8,
+      "comments": "Great hike up to the pulpit. Great views. Wish we kept going all the way up to Mt. Leconte but that'll be for another day...",
+      "id": 12
     }
   ]
 }
