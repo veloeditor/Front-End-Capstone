@@ -1,6 +1,6 @@
 import React, { Component } from "react"
 import TrailsManager from '../modules/TrailsManager'
-import {CircleArrow as ScrollUpButton} from "react-scroll-up-button";
+import { CircleArrow as ScrollUpButton } from "react-scroll-up-button";
 
 //search function that returns the fields which the filter will work - name, difficulty and location
 const searchingFor = (term) => {
@@ -30,7 +30,7 @@ class SearchList extends Component {
     this.searchHandler = this.searchHandler.bind(this);
   }
 
-  
+
 
   //handler function for search field   
   searchHandler(event) {
@@ -53,7 +53,7 @@ class SearchList extends Component {
           {trails.filter(searchingFor(term)).map((trail) =>
             <div key={trail.id} className="card">
               <div key={trail.id} className="card-content">
-              <span><img className="trail_pictures" src={trail.photo} alt="app logo"/></span>
+                <span><img className="trail_pictures" src={trail.photo} alt="Smoky Mountains" /></span>
                 <h3 className="trail_name">{trail.name}</h3>
                 <p className="card_miles"><span>Length: </span>{trail.miles}</p>
                 <p className="comments">{trail.description}</p>
@@ -67,11 +67,13 @@ class SearchList extends Component {
                     this.props.history.push("/hikes/new")
                   }}>Log this trail</button>
                 </div>
+
               </div>
             </div>
           )}
+          <p className="photo_credit">Photos provided through the Hiking Project API unless otherwise noted.</p>
         </div>
-        <footer><ScrollUpButton  /></footer>
+        <footer><ScrollUpButton /></footer>
       </>
     );
   }
