@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import HikesManager from "../modules/HikesManager"
 import UserManager from "../modules/UserManager"
-
+import { Progress } from 'reactstrap';
 
 
 
@@ -20,6 +20,20 @@ class Dashboard extends Component {
     this.props.history.push("/login")
     }
 
+    userGoalProgress = () => {
+      const username = (JSON.parse(sessionStorage.getItem("credentials")))
+      UserManager.get(username.id)
+        .then((users) => {
+          const percentage = parseInt(this.state.totalMiles / users.goal * 100)
+          console.log(this.state.totalMiles)
+          if (percentage > 100) {
+            return alert("You bet your goal!  How about setting another?")
+          }
+          this.setState({goalPercentage: percentage})
+          return percentage
+        })
+    }
+
     totalUserMiles = () => {
       const username = (JSON.parse(sessionStorage.getItem("credentials")))
       HikesManager.getAll(username.id)
@@ -31,22 +45,11 @@ class Dashboard extends Component {
         })
     }
 
-    userGoalProgress = () => {
-      const username = (JSON.parse(sessionStorage.getItem("credentials")))
-      UserManager.get(username.id)
-        .then((users) => {
-          const percentage = this.state.totalMiles / users.goal * 100
-          console.log(this.state.totalMiles)
-          this.setState({goalPercentage: percentage})
-          return percentage
-        })
-    }
-
     componentDidMount(){
       const username = (JSON.parse(sessionStorage.getItem("credentials")))
       HikesManager.getAll(username.id)
-      .then((hikes) => this.setState({hikes})
-      ).then(() => this.totalUserMiles())
+      .then((hikes) => this.setState({hikes}))
+      .then(() => this.totalUserMiles())
       .then(() => this.userGoalProgress())
   }
 
@@ -66,14 +69,18 @@ class Dashboard extends Component {
         You're <span className="userPerc">{this.state.goalPercentage}%</span> of your way towards your goal.</p>
         <button className="goal_change" onClick={() => {this.props.history.push("/goal")}}>Change your goal</button>
       </div>
+      
       <br></br>
       <div className="dash_add_container">
+        
         <button className="add_hike" onClick={() => {this.props.history.push("/hikes/new")}}>Log your hike</button>
       </div>
       <br></br>
       <div className="dash_log_container">
-        <button className="hike_log" onClick={() => {this.props.history.push("/hikes")}}>View your hikes</button>
+        
+      <button type="button" class="btn btn-outline-secondary" className="hike_log" onClick={() => {this.props.history.push("/hikes")}}>View your hikes</button>
       </div>
+      
       </>
     )
   }
