@@ -8,12 +8,12 @@ import { Link } from "react-router-dom";
 
 const customStyles = {
   content: {
-      top: '46%',
-      left: '50%',
-      right: 'auto',
-      bottom: 'auto',
-      marginRight: '-50%',
-      transform: 'translate(-50%, -50%)',   
+    top: '46%',
+    left: '50%',
+    right: 'auto',
+    bottom: 'auto',
+    marginRight: '-50%',
+    transform: 'translate(-50%, -50%)',
   },
   overlay: {
     background: 'rgba(0, 0, 0, .8)'
@@ -22,7 +22,7 @@ const customStyles = {
 ReactModal.setAppElement('#root')
 
 class Dashboard extends Component {
-  
+
   state = {
     hikes: [],
     totalMiles: 0,
@@ -30,7 +30,7 @@ class Dashboard extends Component {
     goalPercentage: 0,
     goal: 0,
     alert: null,
-}
+  }
 
   constructor() {
     super();
@@ -50,23 +50,23 @@ class Dashboard extends Component {
   logout = () => {
     sessionStorage.clear()
     this.props.history.push("/login")
-    }
+  }
 
 
   userGoalProgress = () => {
     const username = (JSON.parse(sessionStorage.getItem("credentials")))
     UserManager.get(username.id)
       .then((users) => {
-        
+
         const percentage = parseInt(this.state.totalMiles / users.goal * 100)
         console.log(this.state.totalMiles)
         console.log("user", users.goal)
-        this.setState({goalPercentage: percentage})
+        this.setState({ goalPercentage: percentage })
         if (percentage >= 100) {
           this.openModal()
         }
       })
-    }
+  }
 
   totalUserMiles = () => {
     const username = (JSON.parse(sessionStorage.getItem("credentials")))
@@ -74,92 +74,92 @@ class Dashboard extends Component {
       .then((hikes) => {
         const userHikes = hikes.filter(hike => hike.userId === username.id).reduce((totalMiles, hikes) => totalMiles + hikes.miles, 0)
         console.log("userhikes", userHikes)
-        this.setState({totalMiles: userHikes}, () => this.userGoalProgress()) 
+        this.setState({ totalMiles: userHikes }, () => this.userGoalProgress())
         return userHikes
       })
   }
 
 
-  componentDidMount(){
+  componentDidMount() {
     const username = (JSON.parse(sessionStorage.getItem("credentials")))
     HikesManager.getAll(username.id)
-    .then((hikes) => this.setState({hikes}))
-    .then(() => this.totalUserMiles())
+      .then((hikes) => this.setState({ hikes }))
+      .then(() => this.totalUserMiles())
     UserManager.get(username.id)
       .then(users => {
-          this.setState({
-            userId: users.id,
-            goal: users.goal,
-          });
+        this.setState({
+          userId: users.id,
+          goal: users.goal,
+        });
       });
   }
 
-  
+
 
   render() {
     const username = (JSON.parse(sessionStorage.getItem("credentials")))
     const percentage = this.state.goalPercentage;
     const userGoal = this.state.goal
- 
+
 
     return (
       <>
         <div className="dashTop_container">
           <div>
-          <ReactModal
-                      isOpen={this.state.modalIsOpen}
-                      onRequestClose={this.closeModal}
-                      style={customStyles}
-                      contentLabel="Modal"
-                      className="Modal"
-                  >
-                    <span><Link to={"/"}><img className="checkmark" src={ require('./img/checkbox.png')} alt="checkmark"/></Link></span>
-                      <h2 className="goal_congrats">Awesome! You SMASHED your goal!</h2>
-                      <p> Set a new goal:</p>
-                      <button
-                          type="button"
-                          onClick={() => {this.props.history.push("/goal")}}
-                          className=""
-                      >Change Goal</button>
-                  </ReactModal>
-                </div>
+            <ReactModal
+              isOpen={this.state.modalIsOpen}
+              onRequestClose={this.closeModal}
+              style={customStyles}
+              contentLabel="Modal"
+              className="Modal"
+            >
+              <span><Link to={"/"}><img className="checkmark" src={require('./img/checkbox.png')} alt="checkmark" /></Link></span>
+              <h2 className="goal_congrats">Awesome! You SMASHED your goal!</h2>
+              <p> Set a new goal:</p>
+              <button
+                type="button"
+                onClick={() => { this.props.history.push("/goal") }}
+                className=""
+              >Change Goal</button>
+            </ReactModal>
+          </div>
           <div className="dash_topo_img">
             <h3 className="welcome_h3">Welcome, <span>{username.username}</span>!</h3>
-            <div> <button className="sign_out" onClick={this.logout}>Logout</button></div> 
+            <div> <button className="sign_out" onClick={this.logout}>Logout</button></div>
             <p>You've hiked <span className="userMiles">{parseInt(this.state.totalMiles)}</span> miles so far. <br></br>
-            You're <span className="userPerc">{this.state.goalPercentage}%</span> of your way towards your goal.</p>
+              You're <span className="userPerc">{this.state.goalPercentage}%</span> of your way towards your goal.</p>
             <CircularProgressbar className="progressBar" value={percentage} text={`${percentage}%`} strokeWidth={14} styles={buildStyles({
-            textColor: 'black',
-            pathColor: '#a8ba36',
-            trailColor: 'darkred',
-        })}/>
+              textColor: 'black',
+              pathColor: '#a8ba36',
+              trailColor: 'darkred',
+            })} />
             <br></br>
             <p>Your goal is: <span className="userPerc">{userGoal}</span> miles</p>
-            <button className="goal_change" onClick={() => {this.props.history.push("/goal")}}>Change your goal</button>
+            <button className="goal_change" onClick={() => { this.props.history.push("/goal") }}>Change your goal</button>
           </div>
         </div>
         <br></br>
         <div className="dash_content_Container">
           <div className="addHike_container">
-              <div className="dash_bg_image">
-                <div className="dash_add_container">
-                  {/* <button className="add_hike" onClick={() => {this.props.history.push("/hikes/new")}}>Log your hike</button> */}
-                  <button className="hike_log" onClick={() => {this.props.history.push("/hikes")}}>Your Hiking Log</button>
-                </div>
-              </div>   
+            <div className="dash_bg_image">
+              <div className="dash_add_container">
+                {/* <button className="add_hike" onClick={() => {this.props.history.push("/hikes/new")}}>Log your hike</button> */}
+                <button className="hike_log" onClick={() => { this.props.history.push("/hikes") }}>Your Hiking Log</button>
+              </div>
             </div>
+          </div>
           <br></br>
           <div className="viewLog_container">
-              <div className="dash_bg_imageTwo">
-                  <div className="dash_log_container">
-                    
-                    <button className="view_trails" onClick={() => {this.props.history.push("/trails")}}>Trails of the Smokies</button>
-                  </div>
+            <div className="dash_bg_imageTwo">
+              <div className="dash_log_container">
+
+                <button className="view_trails" onClick={() => { this.props.history.push("/trails") }}>Trails of the Smokies</button>
               </div>
+            </div>
           </div>
           <br></br>
         </div>
-    
+
       </>
     )
   }

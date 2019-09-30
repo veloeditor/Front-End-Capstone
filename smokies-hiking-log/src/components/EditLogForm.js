@@ -62,7 +62,7 @@ class HikeEditForm extends Component {
       <>
         <div className="trail_form_container">
           <form>
-            <h3 className="add_hike_h3">Edit your hike:</h3>
+            <h3 className="add_hike_h3">Edit your hike</h3>
 
             <div className="formgrid">
               <h3 className="edit_hike">{this.state.trailName}</h3>
@@ -88,17 +88,21 @@ class HikeEditForm extends Component {
                 defaultValue={this.state.date}
               />
               <br></br>
-              <label htmlFor="comments">Comments: </label>
+              {/* <label htmlFor="comments">Comments: </label>
               <input
                 type="text"
                 required
                 className="form-control"
                 onChange={this.handleFieldChange}
                 id="comments"
-                size="40"
-
                 defaultValue={this.state.comments}
-              />
+              /> */}
+              <label className="comments_label" htmlFor="comments">Comments:</label>
+                <textarea
+              required
+              className="form-control"
+              onChange={this.handleFieldChange} id="comments" rows="5" value={this.state.comments} />
+            
             </div>
             <div className="form_buttons">
               <button

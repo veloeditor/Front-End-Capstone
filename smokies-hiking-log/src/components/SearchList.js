@@ -42,7 +42,7 @@ class SearchList extends Component {
     return (
       <>
         <section className="trail-content">
-          <h1 className="trail_search">Find a new trail to do:</h1>
+          <h1 className="trail_search">Find a new trail to do</h1>
           <p className="search_words">Search by trail name, features (vistas, forest, waterfalls, etc.) difficulty (easy, moderate or hard) or location. Results will appear below. Be sure to download the official park <a target="_blank" rel="noopener noreferrer" href="https://www.nps.gov/grsm/planyourvisit/upload/GSMNP-Map_JUNE14-complete4-2.pdf">trail map</a> to take along on your journey.</p>
           <form>
             <input type="text" className="search_box" placeholder="Enter search terms here, results appear automatically" id="search_field" onChange={this.searchHandler} />

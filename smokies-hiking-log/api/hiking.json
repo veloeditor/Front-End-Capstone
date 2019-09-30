@@ -266,7 +266,7 @@
       "id": 1,
       "username": "BrianW",
       "password": "b",
-      "goal": 100,
+      "goal": 50,
       "completedMiles": 3
     },
     {
@@ -341,7 +341,7 @@
       "date": "2019-09-30",
       "miles": 2,
       "trailId": 5,
-      "comments": "Cool hike to find this hidden cabin once owned by an artist. This is a nice reminder that people used to live and work in this park before it was a National Park.",
+      "comments": "Cool hike to find this  cabin once owned by an artist. This is a reminder that people used to live and work in this park before it was a National Park.",
       "id": 13
     }
   ]

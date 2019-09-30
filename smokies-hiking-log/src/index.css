@@ -24,7 +24,7 @@ body, html {
   }
 
   .edit_hike {
-    font-size: 1.3em;
+    font-size: 1.1em;
     margin-bottom: 6px;
   }
 
@@ -103,6 +103,7 @@ body, html {
 .dashTop_container p {
   margin-bottom: 3px;
   margin-top: 3px;
+  font-size: 1.1em;
 }
 
 .trail-content {
@@ -147,9 +148,11 @@ input#miles {
 
 .add_hike_h3 {
   text-align: center;
+  font-size: 1.4em;
 }
 .submit {
   margin-right: 10px;
+  margin-top: 10px;
 }
 
 .form_buttons {
@@ -170,6 +173,17 @@ input[type=text], input[type=date], input[type=number], select {
   padding: 5px 5px;
   outline: 0px;
   margin: 8px 0;
+  display: inline-block;
+  border: 1px solid rgb(58, 0, 0);
+  border-radius: 2px;
+  box-sizing: border-box;
+}
+
+textarea {
+  width: 80%;
+  padding: 5px 5px;
+  outline: 0px;
+  margin-left: 5px;
   display: inline-block;
   border: 1px solid rgb(58, 0, 0);
   border-radius: 2px;
@@ -342,6 +356,10 @@ p.card_miles {
   margin-bottom: 0px;
 }
 
+#comments {
+  width: 70%;
+}
+
 .dash_content_Container {
   height: 100%;
 }
@@ -351,16 +369,16 @@ p.card_miles {
   border-style: solid;
   /* border-width: 10px; */
   border-color: rgb(46, 6, 6);
-  height: 180px;
+  height: 100px ;
 }
 
 
 .addHike_container {
-  height: 180px;
+  height: 100px ;
 }
 
 .progressBar {
-  max-width: 70px;
+  max-width: 74px;
   padding-bottom: 8px;
 }
 
@@ -371,7 +389,7 @@ p.card_miles {
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 180px; 
+    height: 100px ; 
 }
 
 .viewLog_container .dash_bg_imageTwo {
@@ -381,7 +399,7 @@ p.card_miles {
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: 180px; 
+  height: 100px; 
 }
 
 .search_container .dash_bg_imageThree {
@@ -391,19 +409,19 @@ p.card_miles {
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: 180px; 
+  height: 100px; 
 }
 
  /* main page buttons for features */
 .add_hike, .hike_log, .view_trails {
   align-content: center;
   justify-content: center;
-  height: 40px;
-  font-size: 1.1em;
+  height: 38px;
+  font-size: 1.2em;
   text-decoration: none;
   margin: 0px;
   text-align: center;
-  margin-top: 68px;
+  margin-top: 30px;
   letter-spacing: .4px;
 }
 
