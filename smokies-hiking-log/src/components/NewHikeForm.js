@@ -97,7 +97,7 @@ class NewHikeForm extends Component {
             <>
                 <div className="add_hike_container">
                     <form>
-                        <h3 className="add_hike_h3">Add a Hike:</h3>
+                        <h3 className="add_hike_h3">Add a new hike</h3>
                         <div className="formgrid">
                             <label htmlFor="name">Trail Name: </label>
                             <select
