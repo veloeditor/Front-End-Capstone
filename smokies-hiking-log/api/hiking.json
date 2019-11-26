@@ -266,7 +266,7 @@
       "id": 1,
       "username": "BrianW",
       "password": "b",
-      "goal": 50,
+      "goal": 100,
       "completedMiles": 3
     },
     {
@@ -343,6 +343,15 @@
       "trailId": 5,
       "comments": "Cool hike to find this  cabin once owned by an artist. This is a reminder that people used to live and work in this park before it was a National Park.",
       "id": 13
+    },
+    {
+      "name": "",
+      "userId": 1,
+      "date": "2019-10-01",
+      "miles": 8,
+      "trailId": 20,
+      "comments": "Beautiful hike. Not crowded. Took a dip in the river to cool off.",
+      "id": 14
     }
   ]
 }

@@ -255,6 +255,7 @@ input[type=date] {
   margin-top: 15px;
 }
 
+
 .card-content {
   background-color: rgb(250, 235, 223);
   padding-top: 5px;
@@ -426,7 +427,7 @@ p.card_miles {
 }
 
 .hike_log {
-  margin-left: 10px;
+  
 }
 
 .sign_out {
