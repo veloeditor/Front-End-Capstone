@@ -1,3 +1,8 @@
+# The Smokies Hiking Log - NSS Front-End Project
+This is a repository for the Smokies Hiking Log Front-End Capstone which I made for the Nashville Software School Full Stack Web Development course.  
+
+<img src="https://github.com/veloeditor/portfolio/blob/master/img/portfolio/smokies_2.png" alt="Homepage" width="200" align="middle"/>
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -66,3 +71,5 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+
