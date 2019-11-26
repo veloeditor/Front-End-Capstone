@@ -48,7 +48,7 @@ class HikeEditForm extends Component {
     return (
       <>
         <div className="goal_edit_container">
-          <h3 className="goal_h3">Enter a new goal:</h3>
+          <h3 className="goal_h3">Enter a new goal</h3>
           <form>
             <div className="formgrid">
               <label htmlFor="goal">Your new goal: </label>
