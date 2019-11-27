@@ -9,7 +9,9 @@ The application was designed for mobile view, so it will look best with a reduce
 
 ## Main App Features
 
-Upon the creation of an account, the user chooses a hiking goal (in miles).  There are two main sections to the app: "Your Hiking Log" and "Trails of the Smokies". The Hiking Log shows you any hikes you have logged, including the date of the hike and any comments you've left for the trip.  There is also the option to add a hike in this video.  In the "Trails of the Smokies" view you can browse a variety of hikes in the Great Smoky Mountains with a description of the trail and various stats about the hike including degree of difficulty, length and altitude gained. You will also find a link to Google Maps for directions to the trailhead. You can also add any hike to your hiking log.
+Upon the creation of an account, the user chooses a hiking goal (in miles).  There are two main sections to the app: "Your Hiking Log" and "Trails of the Smokies". The Hiking Log shows you any hikes you have logged, including the date of the hike and any comments you've left for the trip.  There is also the option to add a hike in this view.  In the "Trails of the Smokies" view you can browse a variety of hikes in the Great Smoky Mountains with a description of the trail and various stats about the hike including degree of difficulty, length and altitude gained. You will also find a link to Google Maps for directions to the trailhead. You can also add any hike to your hiking log.
+
+Every hike you log will add miles towards your goal. You can change your goal at any point. Once you reach and exceed your goal, you'll receive a congratulations window and the option to create a new goal.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
