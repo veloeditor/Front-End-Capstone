@@ -1,7 +1,9 @@
 # The Smokies Hiking Log - NSS Front-End Project
 This is a repository for the Smokies Hiking Log Front-End Capstone which I made for the Nashville Software School Full Stack Web Development course. A video walk-through video will be coming soon.
 
-<img src="https://github.com/veloeditor/portfolio/blob/master/img/portfolio/smokies_2.png" alt="Homepage" width="200" align="middle"/>
+<p align="center">
+  <img width="260" src="https://github.com/veloeditor/portfolio/blob/master/img/portfolio/smokies_2.png">
+</p>
 
 The application was designed for mobile view, so it will look best with a reduce width to your browser's window.
 
