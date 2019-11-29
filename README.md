@@ -16,7 +16,7 @@ Every hike you log will add miles towards your goal. You can change your goal at
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 <p align="center">
-  <img width="100%" src="https://github.com/veloeditor/Front-End-Capstone/blob/master/smokies-hiking-log/Demo/Smokies_LogIn_ChangeGoal.gif">
+  <img width="100%" src="https://github.com/veloeditor/Front-End-Capstone/blob/master/smokies-hiking-log/Demo/Smokies_Demo_1.gif">
 </p>
 
 ## Available Scripts
