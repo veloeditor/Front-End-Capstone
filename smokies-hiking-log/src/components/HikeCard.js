@@ -17,7 +17,7 @@ class HikeCard extends Component {
                 onClick={() => { 
                   sessionStorage.setItem("currentTrailId", this.props.hike.trail.name)
                   this.props.history.push(`/hikes/${this.props.hike.id}/edit`) }}>Edit</button>
-              <button className="edit_button" onClick={() => this.props.deleteHike(this.props.hike.id)}>Delete</button></div>
+              <button className="edit_button" onClick={() => { if (window.confirm('Are you sure you wish to delete this item?')) this.props.deleteHike(this.props.hike.id)}}>Delete</button></div>
           </div>
         </div>
       </>

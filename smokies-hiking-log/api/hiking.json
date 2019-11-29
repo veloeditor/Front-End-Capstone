@@ -266,7 +266,7 @@
       "id": 1,
       "username": "BrianW",
       "password": "b",
-      "goal": 100,
+      "goal": 30,
       "completedMiles": 3
     },
     {
@@ -307,15 +307,6 @@
       "trailId": 10,
       "comments": "Great! Awesome~",
       "id": 9
-    },
-    {
-      "name": "",
-      "userId": 1,
-      "date": "2019-07-07",
-      "miles": 2.3,
-      "trailId": 16,
-      "comments": "Water levels were high this day so the waterfall was full and flowing fast. Unfortunately the trail was also extremely crowded, but this is one of the most popular trails in the park so go figure.",
-      "id": 10
     },
     {
       "name": "",
