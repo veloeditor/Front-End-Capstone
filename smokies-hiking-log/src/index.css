@@ -522,3 +522,17 @@ button:focus {
 button:active {
   transform: scale(0.99);
 }
+
+.alert_warning {
+  margin-top: 4px;
+  margin-bottom: 0px;
+  font-size: x-large;
+  color: darkred;
+}
+
+.delete_msg {
+  margin-top: 0px;
+  margin-bottom: 8px;
+  font-weight: 500;
+  font-size: medium
+}

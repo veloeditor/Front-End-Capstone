@@ -334,24 +334,6 @@
       "trailId": 20,
       "comments": "Beautiful hike. Not crowded. Took a dip in the river to cool off.",
       "id": 14
-    },
-    {
-      "name": "",
-      "userId": 1,
-      "date": "2019-11-17",
-      "miles": 4,
-      "trailId": 19,
-      "comments": "This was a pretty cool hike. Got to see some old cabins. ",
-      "id": 15
-    },
-    {
-      "name": "",
-      "userId": 1,
-      "date": "2020-01-12",
-      "miles": 3.6,
-      "trailId": 10,
-      "comments": "Pretty hike. Stream was roaring thanks to the recent rains. Not very crowded.",
-      "id": 16
     }
   ]
 }
