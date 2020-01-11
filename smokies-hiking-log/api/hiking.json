@@ -266,7 +266,7 @@
       "id": 1,
       "username": "BrianW",
       "password": "b",
-      "goal": 40,
+      "goal": 50,
       "completedMiles": 3
     },
     {
@@ -334,6 +334,24 @@
       "trailId": 20,
       "comments": "Beautiful hike. Not crowded. Took a dip in the river to cool off.",
       "id": 14
+    },
+    {
+      "name": "",
+      "userId": 1,
+      "date": "2020-01-05",
+      "miles": 5.9,
+      "trailId": 8,
+      "comments": "Very cold! Great to see the pulpit and one day will have to return to go all the way up to Mt. Leconte.",
+      "id": 15
+    },
+    {
+      "name": "",
+      "userId": 1,
+      "date": "2020-01-11",
+      "miles": 2.6,
+      "trailId": 13,
+      "comments": "very cold!",
+      "id": 16
     }
   ]
 }
