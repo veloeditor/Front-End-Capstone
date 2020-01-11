@@ -266,7 +266,7 @@
       "id": 1,
       "username": "BrianW",
       "password": "b",
-      "goal": 30,
+      "goal": 50,
       "completedMiles": 3
     },
     {
@@ -311,17 +311,8 @@
     {
       "name": "",
       "userId": 1,
-      "date": "2019-08-11",
-      "miles": 11.1,
-      "trailId": 14,
-      "comments": "Brutal hike! The climb up to Low Gap is relentless but the view from the top is amazing!  Great 360 view!!",
-      "id": 11
-    },
-    {
-      "name": "",
-      "userId": 1,
       "date": "2019-09-07",
-      "miles": 5.9,
+      "miles": 6,
       "trailId": 8,
       "comments": "Great hike up to the pulpit. Great views. Wish we kept going all the way up to Mt. Leconte but that'll be for another day...",
       "id": 12
@@ -332,7 +323,7 @@
       "date": "2019-09-30",
       "miles": 2,
       "trailId": 5,
-      "comments": "Cool hike to find this  cabin once owned by an artist. This is a reminder that people used to live and work in this park before it was a National Park.",
+      "comments": "Cool hike to find a cabin once owned by an artist. This is a reminder that people used to live and work in this park before it was a National Park.",
       "id": 13
     },
     {
@@ -343,6 +334,24 @@
       "trailId": 20,
       "comments": "Beautiful hike. Not crowded. Took a dip in the river to cool off.",
       "id": 14
+    },
+    {
+      "name": "",
+      "userId": 1,
+      "date": "2020-01-05",
+      "miles": 5.9,
+      "trailId": 8,
+      "comments": "Very cold! Great to see the pulpit and one day will have to return to go all the way up to Mt. Leconte.",
+      "id": 15
+    },
+    {
+      "name": "",
+      "userId": 1,
+      "date": "2020-01-11",
+      "miles": 2.6,
+      "trailId": 13,
+      "comments": "very cold!",
+      "id": 16
     }
   ]
 }
