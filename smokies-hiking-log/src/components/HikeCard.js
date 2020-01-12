@@ -50,7 +50,7 @@ class HikeCard extends Component {
               contentLabel="Modal"
               className=""
             >
-              <h2 className="alert_warning">ALERT!</h2>
+              <h2 className="alert_warning">Delete</h2>
               <h3 className="delete_msg">Are you sure you want to delete this?</h3>
               <button
                 type="button"

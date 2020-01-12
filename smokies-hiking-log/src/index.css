@@ -527,7 +527,7 @@ button:active {
 .alert_warning {
   margin-top: 4px;
   margin-bottom: 0px;
-  font-size: x-large;
+  font-size: large;
   color: darkred;
 }
 
