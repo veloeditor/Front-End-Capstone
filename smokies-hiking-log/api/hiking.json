@@ -266,7 +266,7 @@
       "id": 1,
       "username": "BrianW",
       "password": "b",
-      "goal": 50,
+      "goal": 100,
       "completedMiles": 3
     },
     {
@@ -311,15 +311,6 @@
     {
       "name": "",
       "userId": 1,
-      "date": "2019-09-07",
-      "miles": 6,
-      "trailId": 8,
-      "comments": "Great hike up to the pulpit. Great views. Wish we kept going all the way up to Mt. Leconte but that'll be for another day...",
-      "id": 12
-    },
-    {
-      "name": "",
-      "userId": 1,
       "date": "2019-09-30",
       "miles": 2,
       "trailId": 5,
@@ -347,11 +338,47 @@
     {
       "name": "",
       "userId": 1,
-      "date": "2020-01-11",
-      "miles": 2.6,
-      "trailId": 13,
-      "comments": "very cold!",
+      "date": "2020-01-01",
+      "miles": 8,
+      "trailId": 20,
+      "comments": "Beautiful hike. Waterfall was roaring.",
       "id": 16
+    },
+    {
+      "name": "",
+      "userId": 1,
+      "date": "2020-01-14",
+      "miles": 4,
+      "trailId": 19,
+      "comments": "The stream was roaring. The trial wasn't too crowded.",
+      "id": 17
+    },
+    {
+      "name": "",
+      "userId": 1,
+      "date": "2020-01-14",
+      "miles": 7.6,
+      "trailId": 6,
+      "comments": "Beautiful! Did not have a view.  What's up with that?",
+      "id": 18
+    },
+    {
+      "name": "",
+      "userId": 1,
+      "date": "2020-01-14",
+      "miles": 3.6,
+      "trailId": 10,
+      "comments": "Beautiful hike!",
+      "id": 19
+    },
+    {
+      "name": "",
+      "userId": 1,
+      "date": "2020-01-14",
+      "miles": 2,
+      "trailId": 5,
+      "comments": "Cool historic cabin.  I think there were ghosts.",
+      "id": 20
     }
   ]
 }
